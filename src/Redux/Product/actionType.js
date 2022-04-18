@@ -1,0 +1,1 @@
+export const SHOW_PRODUCT_DATA = "SHOW_PRODUCT_DATA"
