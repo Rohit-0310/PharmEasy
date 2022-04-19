@@ -16,7 +16,7 @@ const Catrgorys = () => {
         // console.log(res);
       }, []);
   });
-// console.log(data)
+console.log(data)
   return <div>Catrgorys</div>;
 };
 
