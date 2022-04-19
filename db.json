@@ -1,0 +1,777 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "cat_title": "Dabur",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/9f6319af182-Featured-web_Dabur.jpg?dim=146x0&dpr=1.25&q=100"
+    },
+    {
+      "id": 2,
+      "cat_title": "Horlicks",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/fd17e547883-Horlicks_web.jpg?dim=146x0&dpr=1.25&q=100"
+    },
+    {
+      "id": 3,
+      "cat_title": "Liveasy",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/c572570b5ce-Liveasy.jpg?dim=146x0&dpr=1.25&q=100"
+    },
+    {
+      "id": 4,
+      "cat_title": "Optimum Nutrition",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/7284c37cbe5-web_Optimum-Nutrition.jpg?dim=146x0&dpr=1.25&q=100"
+    },
+    {
+      "id": 5,
+      "cat_title": "Nivea",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/487644e2f83-Nivea_web.jpg?dim=146x0&dpr=1.25&q=100"
+    },
+    {
+      "id": 6,
+      "cat_title": "Revital",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/2d987111a15-Featured-banner_Revital.png?dim=146x0&dpr=1.25&q=100"
+    },
+    {
+      "id": 7,
+      "cat_title": "Volini",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/ac01791d842-Featured-banner_Volini.png?dim=146x0&dpr=1.25&q=100"
+    },
+    {
+      "id": 8,
+      "cat_title": "Protinex",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/48a0aec195d-Featured-web_Protinex.jpg?dim=146x0&dpr=1.25&q=100"
+    },
+    {
+      "id": 9,
+      "cat_title": "Beardo",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/265ba4f9e1e-web_beadro.jpg?dim=146x0&dpr=1.25&q=100"
+    },
+    {
+      "id": 10,
+      "cat_title": "Nycli",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/326d31cf4d3-Nycil_web.jpg?dim=146x0&dpr=1.25&q=100"
+    },
+    {
+      "id": 11,
+      "cat_title": "Hansaplast",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/7fdd90400a1-Featured-banner-Hansaplast-web.png?dim=146x0&dpr=1.375&q=100"
+    },
+    {
+      "id": 12,
+      "cat_title": "Glucon-D",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/1f27723d1f3-Glucon-D.jpg?dim=146x0&dpr=1.375&q=100"
+    },
+    {
+      "id": 13,
+      "cat_title": "EverHerb",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/0845572266f-Everherb.jpg?dim=146x0&dpr=1.375&q=100"
+    },
+    {
+      "id": 14,
+      "cat_title": "Plum",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/9d406684215-Featured-brand_web_Plum.jpg?dim=146x0&dpr=1.375&q=100"
+    },
+    {
+      "id": 15,
+      "cat_title": "Huggies",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/c72feb4bd7a-web_Huggies.jpg?dim=146x0&dpr=1.375&q=100"
+    },
+    {
+      "id": 16,
+      "cat_title": "Harpic",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/10bd64d3c0f-web_harpic.jpg?dim=146x0&dpr=1.375&q=100"
+    },
+    {
+      "id": 17,
+      "cat_title": "Johnson's",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/bf633425db6-web_johnson.jpg?dim=146x0&dpr=1.375&q=100"
+    },
+    {
+      "id": 18,
+      "cat_title": "Dr. Valdya",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/22a1550e9b6-DrVaidya_Dweb.jpg?dim=146x0&dpr=1.375&q=100"
+    },
+    {
+      "id": 19,
+      "cat_title": "Biluma",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/e7cc3f16486-web-Biluma.jpg?dim=146x0&dpr=1.375&q=100"
+    },
+    {
+      "id": 20,
+      "cat_title": "Pigeon",
+      "cat_img": "https://cms-contents.pharmeasy.in/carousel_item/f8493a13be2-web_Pigeon.jpg?dim=146x0&dpr=1.375&q=100"
+    }
+  ],
+  "Products": [
+    {
+      "id": 1,
+      "title": "Dabur Odomos Lvp - 45 Ml (Pack Of 3)",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/V83239/dabur-odomos-lvp-45-ml-pack-of-3-2-1641970337.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 1,
+      "price": "₹199.00",
+      "discount": "37%",
+      "dis_price": 125.37,
+      "brand": "DABUR",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 2,
+      "title": "Dabur Trifla Guggulu Tab 40'S",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/I37042/dabur-trifla-guggulu-tab-40s-2-1632776689.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 1,
+      "price": "₹65.00",
+      "discount": "36%",
+      "dis_price": 41.6,
+      "brand": "DABUR",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 3,
+      "title": "Dabur Odomos Natural Gel 80 Gm",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/I05443/dabur-odomos-natural-gel-80-gm-2-1641398713.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 1,
+      "price": "75",
+      "discount": "29%",
+      "dis_price": 53.25,
+      "brand": "DABUR",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 4,
+      "title": "Dabur Odomos Naturals Cream 50gm",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/128750/dabur-odomos-naturals-cream-50gm-2-1641398771.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 1,
+      "price": "₹58",
+      "discount": "29%",
+      "dis_price": 41.18,
+      "brand": "DABUR",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 5,
+      "title": "Dabur Odomos Mosquitoes Repellent Spray Bottle Of 100 Ml",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/I05453/dabur-odomos-mosquitoes-repellent-spray-bottle-of-100-ml-2-1641398828.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 1,
+      "price": "₹99.00",
+      "discount": "29%",
+      "dis_price": 70.29,
+      "brand": "DABUR",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 6,
+      "title": "Dabur Odomos Naturals Cream With Vitamin 50 Gm",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/I11310/dabur-odomos-naturals-cream-with-vitamin-50-gm-2-1632775697.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 1,
+      "price": "₹53.00",
+      "discount": "27%",
+      "dis_price": 38.69,
+      "brand": "DABUR",
+      "Exp_Date": "30/18/2023"
+    },
+
+    {
+      "id": 7,
+      "title": "Dabur Shilajit Gold Vitality Capsules Strip Of 10",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/051580/dabur-shilajit-gold-vitality-capsules-strip-of-10-1-1643884357.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 1,
+      "price": "₹188.7",
+      "discount": "26%",
+      "dis_price": 188.7,
+      "brand": "DABUR",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 8,
+      "title": "Dabur Camne Vid Tab 30'S",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/I07176/dabur-camne-vid-tab-25s-2-1632775298.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 1,
+      "price": "₹645",
+      "discount": "25%",
+      "dis_price": 483.75,
+      "brand": "DABUR",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 9,
+      "title": "Dabur Swarna Guggulu 10'S",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/I05472/dabur-swarna-guggulu-10s-2-1641398935.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 1,
+      "price": "₹450",
+      "discount": "25%",
+      "dis_price": 337.5,
+      "brand": "DABUR",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 10,
+      "title": "Dabur Chyawanprakash - 1.8 Kg",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/D39624/dabur-chyawanprakash-18-kg-2-1643262764.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 1,
+      "price": "₹775",
+      "discount": "25%",
+      "dis_price": 581.25,
+      "brand": "DABUR",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 11,
+      "title": "Dabur Vatika Health Shampoo 640 Ml",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/Y40377/dabur-vatika-health-shampoo-640-ml-2-1643262824.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 1,
+      "price": "₹445",
+      "discount": "29%",
+      "dis_price": 333.75,
+      "brand": "DABUR",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 12,
+      "title": "Dabur Baby Wash 500ml",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/S26712/dabur-baby-wash-500ml-2-1643881741.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 1,
+      "price": "₹349",
+      "discount": "24%",
+      "dis_price": 265.24,
+      "brand": "DABUR",
+      "Exp_Date": "30/18/2023"
+    },
+
+    {
+      "id": 13,
+      "title": "Horlicks Protein Plus Vanilla Carton, 200 G",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/I41113/horlicks-protein-plus-vanilla-carton-200-g-2-1641788139.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 2,
+      "price": "₹299.00",
+      "discount": "25%",
+      "dis_price": 217.57,
+      "brand": "HORLICKS",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 14,
+      "title": "Horlicks Protein Plus Chocolate Container, 400 G",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/I41108/horlicks-protein-plus-chocolate-container-400-g-2-1643880294.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 2,
+      "price": "₹550",
+      "discount": "12%",
+      "dis_price": 484,
+      "brand": "HORLICKS",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 15,
+      "title": "Horlicks Lite Malt 450 Gm Jar",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/I04895/horlicks-lite-malt-450-gm-jar-2-1643882022.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 2,
+      "price": "75",
+      "discount": "29%",
+      "dis_price": 53.25,
+      "brand": "HORLICKS",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 16,
+      "title": "Horlicks Health & Nutrition Drink, Chocolate, Carton 500 G",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/091760/horlicks-health-nutrition-drink-chocolate-carton-500-g-1-1649248822.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 2,
+      "price": "₹58",
+      "discount": "29%",
+      "dis_price": 41.18,
+      "brand": "HORLICKS",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 17,
+      "title": "Horlicks Women'S Plus Caramel Jar, 400 G",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/F52227/horlicks-womens-plus-caramel-jar-400-g-2-1643882005.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 2,
+      "price": "₹99.00",
+      "discount": "29%",
+      "dis_price": 70.29,
+      "brand": "HORLICKS",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 18,
+      "title": "Horlicks Protein Plus Chocolate Carton, 200 G",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/I41111/horlicks-protein-plus-chocolate-carton-200-g-1-1641788266.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 2,
+      "price": "₹53.00",
+      "discount": "27%",
+      "dis_price": 38.69,
+      "brand": "HORLICKS",
+      "Exp_Date": "30/18/2023"
+    },
+
+    {
+      "id": 19,
+      "title": "Horlicks Health & Nutrition Drink Refill, 500 G",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/I04912/horlicks-health-nutrition-drink-refill-500-g-2-1643882415.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 2,
+      "price": "₹188.7",
+      "discount": "26%",
+      "dis_price": 188.7,
+      "brand": "HORLICKS",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 20,
+      "title": "Horlicks Junior Health & Nutrition Drink Vanilla, 500 G Bib",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/C45947/horlicks-junior-health-nutrition-drink-vanilla-500-g-bib-2-1641970794.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 2,
+      "price": "₹645",
+      "discount": "25%",
+      "dis_price": 483.75,
+      "brand": "HORLICKS",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 21,
+      "title": "Horlicks Junior Health & Nutrition Drink Chocolate - 500 G",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/F52574/horlicks-junior-health-nutrition-drink-chocolate-500-g-2-1641970470.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 2,
+      "price": "₹450",
+      "discount": "25%",
+      "dis_price": 337.5,
+      "brand": "HORLICKS",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 22,
+      "title": "Horlicks Mother'S Plus Vanilla Refill 500 G",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/J24391/horlicks-mothers-plus-vanilla-refill-500-g-1-1641791163.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 2,
+      "price": "₹775",
+      "discount": "25%",
+      "dis_price": 581.25,
+      "brand": "HORLICKS",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 23,
+      "title": "Horlicks Junior Health & Nutrition Drink Vanilla, 1 Kg",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/Z11343/horlicks-junior-health-nutrition-drink-vanilla-1-kg-2-1643876415.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 2,
+      "price": "₹445",
+      "discount": "29%",
+      "dis_price": 333.75,
+      "brand": "HORLICKS",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 24,
+      "title": "Horlicks Mother'S Plus Vanilla Refill 200 G",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/K13540/horlicks-mothers-plus-vanilla-refill-200-g-1-1643880455.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 2,
+      "price": "₹349",
+      "discount": "24%",
+      "dis_price": 265.24,
+      "brand": "HORLICKS",
+      "Exp_Date": "30/18/2023"
+    },
+
+    {
+      "id": 25,
+      "title": "Liveasy Wellness Immunity Pro - Vitamin C & Zinc - With Herbal Immunity Blend - 60 Tablets",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/U58783/liveasy-wellness-immunity-pro-vitamin-c-zinc-with-herbal-immunity-blend-60-tablets-2-1643876968.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 3,
+      "price": "₹199.00",
+      "discount": "37%",
+      "dis_price": 125.37,
+      "brand": "LIVEASY",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 26,
+      "title": "Liveasy Wellness Apple Cider Vinegar With Mother -Improves Metabolism- 500ml Bottle",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/J51815/liveasy-wellness-apple-cider-vinegar-with-mother-improves-metabolism-500ml-bottle-2-1643880237.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 3,
+      "price": "₹65.00",
+      "discount": "36%",
+      "dis_price": 41.6,
+      "brand": "LIVEASY",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 27,
+      "title": "Liveasy Essentials Pill Box",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/Y53636/liveasy-essentials-pill-box-2-1643876564.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 3,
+      "price": "75",
+      "discount": "29%",
+      "dis_price": 53.25,
+      "brand": "LIVEASY",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 28,
+      "title": "Liveasy Wellness Vitamin C (990mg) With Zinc (10mg) - Powerful Immunity Booster - 60 Veg Tablets",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/E85132/liveasy-wellness-vitamin-c-990mg-with-zinc-10mg-powerful-immunity-booster-60-veg-tablets-2-1643882980.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 3,
+      "price": "₹58",
+      "discount": "29%",
+      "dis_price": 41.18,
+      "brand": "LIVEASY",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 29,
+      "title": "Liveasy Essentials Men'S Diabetic & Orthopedic Velcro Slippers - Black - Size Uk 10",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/O37141/liveasy-essentials-mens-diabetic-orthopedic-velcro-slippers-black-size-uk-10-2-1641791966.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 3,
+      "price": "₹99.00",
+      "discount": "29%",
+      "dis_price": 70.29,
+      "brand": "LIVEASY",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 30,
+      "title": "Liveasy Foods Healthy Seed Mix- Blend Of 6 Fibre Rich Healthy Seeds",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/E34104/liveasy-foods-healthy-seed-mix-blend-of-6-fibre-rich-healthy-seeds-2-1643883431.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 3,
+      "price": "₹53.00",
+      "discount": "27%",
+      "dis_price": 38.69,
+      "brand": "LIVEASY",
+      "Exp_Date": "30/18/2023"
+    },
+
+    {
+      "id": 31,
+      "title": "Liveasy Wellness Joint Support - Maintains Joints Mobility - Bone & Joint Health - Bottle Of 60",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/T05643/liveasy-wellness-joint-support-maintains-joints-mobility-bone-joint-health-bottle-of-60-2-1641794532.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 3,
+      "price": "₹188.7",
+      "discount": "26%",
+      "dis_price": 188.7,
+      "brand": "LIVEASY",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 32,
+      "title": "Liveasy Wellness Multivitamin 50+ - With Brain And Joint Health Blend - - Bottle Of 60",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/Y02976/liveasy-wellness-multivitamin-50-with-brain-and-joint-health-blend-bottle-of-60-2-1643876354.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 3,
+      "price": "₹645",
+      "discount": "25%",
+      "dis_price": 483.75,
+      "brand": "LIVEASY",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 33,
+      "title": "Liveasy Wellness Biotin 10000mcg With Calcium - Prevents Hair Fall - Bottle Of 60",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/J34580/liveasy-wellness-biotin-10000mcg-with-calcium-prevents-hair-fall-bottle-of-60-2-1643880317.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 3,
+      "price": "₹450",
+      "discount": "25%",
+      "dis_price": 337.5,
+      "brand": "LIVEASY",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 34,
+      "title": "Liveasy Essentials Respirometer / Spirometer - Lung Exerciser",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/F60126/liveasy-essentials-respirometer-spirometer-lung-exerciser-2-1645456738.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 3,
+      "price": "₹775",
+      "discount": "25%",
+      "dis_price": 581.25,
+      "brand": "LIVEASY",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 35,
+      "title": "Liveasy Wellness Biotin 10000mcg With Calcium - Prevents Hair Fall - Bottle Of 60",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/J34580/liveasy-wellness-biotin-10000mcg-with-calcium-prevents-hair-fall-bottle-of-60-2-1643880317.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 3,
+      "price": "₹445",
+      "discount": "29%",
+      "dis_price": 333.75,
+      "brand": "LIVEASY",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 36,
+      "title": "Liveasy Essentials Women'S Diabetic & Orthopedic Slippers - Brown - Size Uk 5 / Us 8",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/U54680/liveasy-essentials-womens-diabetic-orthopedic-slippers-brown-size-uk-5-us-8-6.1-1641788894.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 3,
+      "price": "₹349",
+      "discount": "24%",
+      "dis_price": 265.24,
+      "brand": "LIVEASY",
+      "Exp_Date": "30/18/2023"
+    },
+
+    {
+      "id": 37,
+      "title": "Optimum Nutrition (On) Serious Mass Weight Gain Powder - 3 Lbs, 1.36 Kg (Chocolate)",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/W28150/optimum-nutrition-on-serious-mass-weight-gain-powder-3-lbs-136-kg-chocolate-2-1641794647.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 4,
+      "price": "₹1699.00",
+      "discount": "20%",
+      "dis_price": 1359.2,
+      "brand": "OPTIMUM NUTRITION",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 38,
+      "title": "Optimum Nutrition (On) Serious Mass Weight Gain Powder - 3 Lbs, 1.36 Kg (Vanilla)",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/W28150/optimum-nutrition-on-serious-mass-weight-gain-powder-3-lbs-136-kg-chocolate-2-1641794647.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 4,
+      "price": "₹1699.00",
+      "discount": "20%",
+      "dis_price": 1359.2,
+      "brand": "OPTIMUM NUTRITION",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 39,
+      "title": "Optimum Nutrition (On) Serious Mass Weight Gain Powder - 6 Lbs, 2.72 Kg (Vanilla)",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/D94280/optimum-nutrition-on-serious-mass-weight-gain-powder-6-lbs-272-kg-vanilla-2-1641794667.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 4,
+      "price": "₹3249",
+      "discount": "20%",
+      "dis_price": 2599.5,
+      "brand": "OPTIMUM NUTRITION",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 40,
+      "title": "Optimum Nutrition (On) Gold Standard 100% Whey Protein Powder - 5 Lbs, 2.27 Kg (Vanilla Ice Cream)",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/T39367/optimum-nutrition-on-gold-standard-100-whey-protein-powder-5-lbs-227-kg-vanilla-ice-cream-2-1647865914.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 4,
+      "price": "₹775",
+      "discount": "25%",
+      "dis_price": 581.25,
+      "brand": "OPTIMUM NUTRITION",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 41,
+      "title": "Optimum Nutrition (On) Gold Standard 100% Whey Protein Powder -1lb,454g(Vanilla Ice Cream)",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/H97993/optimum-nutrition-on-gold-standard-100-whey-protein-powder-1lb-454gvanilla-ice-cream-6.1-1647866036.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 4,
+      "price": "₹445",
+      "discount": "29%",
+      "dis_price": 333.75,
+      "brand": "OPTIMUM NUTRITION",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 42,
+      "title": "Optimum Nutrition (On) Performance Whey Protein Powder - 1kg (Chocolate Milkshake)",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/M37122/optimum-nutrition-on-performance-whey-protein-powder-1kg-chocolate-milkshake-2-1641794996.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 4,
+      "price": "₹349",
+      "discount": "24%",
+      "dis_price": 265.24,
+      "brand": "OPTIMUM NUTRITION",
+      "Exp_Date": "30/18/2023"
+    },
+
+    {
+      "id": 43,
+      "title": "Optimum Nutrition (On) Gold Standard 100% Whey Protein Powder -2lbs, 907g(Vanilla Ice Cream)",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/S96190/optimum-nutrition-on-gold-standard-100-whey-protein-powder-2lbs-907gvanilla-ice-cream-2-1647865812.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 4,
+      "price": "75",
+      "discount": "29%",
+      "dis_price": 53.25,
+      "brand": "OPTIMUM NUTRITION",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 44,
+      "title": "Optimum Nutrition (On) Gold Standard 100% Whey Protein Powder-5lbs-2.27 Kg(Double Rich Chocolate)",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/H32854/optimum-nutrition-on-gold-standard-100-whey-protein-powder-5lbs-227-kgdouble-rich-chocolate-2-1647865871.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 4,
+      "price": "₹58",
+      "discount": "29%",
+      "dis_price": 41.18,
+      "brand": "OPTIMUM NUTRITION",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 45,
+      "title": "Optimum Nutrition (On) Gold Standard 100% Whey Protein Powder -2 Lbs, 907g(Double Rich Chocolate)",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/R78129/optimum-nutrition-on-gold-standard-100-whey-protein-powder-2-lbs-907gdouble-rich-chocolate-2-1647865781.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 4,
+      "price": "₹99.00",
+      "discount": "29%",
+      "dis_price": 70.29,
+      "brand": "OPTIMUM NUTRITION",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 46,
+      "title": "Optimum Nutrition (On) Serious Mass High Weight Gain Powder - 6 Lbs, 2.72 Kg (Chocolate)",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/M98532/optimum-nutrition-on-serious-mass-high-weight-gain-powder-6-lbs-272-kg-chocolate-2-1641791671.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 4,
+      "price": "₹53.00",
+      "discount": "27%",
+      "dis_price": 38.69,
+      "brand": "OPTIMUM NUTRITION",
+      "Exp_Date": "30/18/2023"
+    },
+
+    {
+      "id": 47,
+      "title": "Optimum Nutrition (On) Serious Mass High Weight Gain Powder - 6 Lbs, 2.72 Kg (Chocolate)",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/M98532/optimum-nutrition-on-serious-mass-high-weight-gain-powder-6-lbs-272-kg-chocolate-2-1641791671.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 4,
+      "price": "₹53.00",
+      "discount": "27%",
+      "dis_price": 38.69,
+      "brand": "OPTIMUM NUTRITION",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 48,
+      "title": "Optimum Nutrition (On) Gold Standard 100% Whey Protein Powder-5lbs-2.27 Kg(Double Rich Chocolate)",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/H32854/optimum-nutrition-on-gold-standard-100-whey-protein-powder-5lbs-227-kgdouble-rich-chocolate-2-1647865871.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 4,
+      "price": "₹3799.00",
+      "discount": "15%",
+      "dis_price": 3229.18,
+      "brand": "OPTIMUM NUTRITION",
+      "Exp_Date": "30/18/2023"
+    },
+
+    {
+      "id": 49,
+      "title": "Nivea Aloe Protect Spf 15 Body Lotion - 400 Ml",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/R32692/nivea-aloe-protect-spf-15-body-lotion-400-ml-2-1641792437.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 5,
+      "price": "₹445",
+      "discount": "29%",
+      "dis_price": 333.75,
+      "brand": "NIVEA",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 50,
+      "title": "Nivea Milk Delights Gramflour Facewash - 100 Ml",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/G63131/nivea-milk-delights-gramflour-facewash-100-ml-2-1641790208.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 5,
+      "price": "₹349",
+      "discount": "24%",
+      "dis_price": 265.24,
+      "brand": "NIVEA",
+      "Exp_Date": "30/18/2023"
+    },
+
+    {
+      "id": 51,
+      "title": "Nivea Milk Delights Turmeric Facewash - 100 Ml",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/L35603/nivea-milk-delights-turmeric-facewash-100-ml-2-1641789364.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 5,
+      "price": "₹199.00",
+      "discount": "37%",
+      "dis_price": 125.37,
+      "brand": "NIVEA",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 52,
+      "title": "Nivea Naturally Good Deodorant Roll On,Bio Aloe Vera - 50 Ml",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/M63987/nivea-naturally-good-deodorant-roll-on-bio-aloe-vera-50-ml-2-1641792716.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 5,
+      "price": "₹65.00",
+      "discount": "36%",
+      "dis_price": 41.6,
+      "brand": "NIVEA",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 53,
+      "title": "Nivea Soft Light Moisturizer Of 300 Ml",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/I40924/nivea-soft-light-moisturizer-of-300-ml-2-1643880629.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 5,
+      "price": "75",
+      "discount": "29%",
+      "dis_price": 53.25,
+      "brand": "NIVEA",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 54,
+      "title": "Nivea Milk Delights Rose Facewash - 100 Ml",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/G69085/nivea-milk-delights-rose-facewash-100-ml-2-1641789815.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 5,
+      "price": "₹58",
+      "discount": "29%",
+      "dis_price": 41.18,
+      "brand": "NIVEA",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 55,
+      "title": "Nivea Fresh Power Fruit Body Wash & Shower Gel 250 Ml",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/E69147/nivea-fresh-power-fruit-body-wash-shower-gel-250-ml-2-1641791196.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 5,
+      "price": "₹99.00",
+      "discount": "29%",
+      "dis_price": 70.29,
+      "brand": "NIVEA",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 56,
+      "title": "Nivea Frangipani & Oil Shower & Body Wash - 500 Ml",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/B24815/nivea-frangipani-oil-shower-body-wash-500-ml-2-1641793547.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 5,
+      "price": "₹53.00",
+      "discount": "27%",
+      "dis_price": 38.69,
+      "brand": "NIVEA",
+      "Exp_Date": "30/18/2023"
+    },
+
+    {
+      "id": 57,
+      "title": "Nivea Naturally Good Deodorant,Bio Aloe Vera - 75 Ml",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/P87776/nivea-naturally-good-deodorant-bio-aloe-vera-75-ml-2-1641792718.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 5,
+      "price": "₹188.7",
+      "discount": "26%",
+      "dis_price": 188.7,
+      "brand": "NIVEA",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 58,
+      "title": "Nivea Lip Berry - 4.8 Gm",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/B66463/nivea-lip-berry-48-gm-2-1641791023.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 5,
+      "price": "₹645",
+      "discount": "25%",
+      "dis_price": 483.75,
+      "brand": "NIVEA",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 59,
+      "title": "Nivea Cocoa Nourish Body Lotion Bottle Of 400 Ml",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/I40912/nivea-cocoa-nourish-body-lotion-bottle-of-400-ml-2-1643880626.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 5,
+      "price": "₹450",
+      "discount": "25%",
+      "dis_price": 337.5,
+      "brand": "NIVEA",
+      "Exp_Date": "30/18/2023"
+    },
+    {
+      "id": 60,
+      "title": "Nivea Shea Smooth Deep Moisture Serum 400 Ml",
+      "img": "https://cdn01.pharmeasy.in/dam/products_otc/U30174/nivea-shea-smooth-deep-moisture-serum-400-ml-2-1641791309.jpg?dim=320x320&dpr=1&q=100",
+      "categoryId": 5,
+      "price": "₹775",
+      "discount": "25%",
+      "dis_price": 581.25,
+      "brand": "NIVEA",
+      "Exp_Date": "30/18/2023"
+    }
+  ]
+}
