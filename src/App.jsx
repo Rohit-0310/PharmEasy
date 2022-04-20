@@ -11,10 +11,10 @@ function App() {
     <div className="App">
       {/* <h1>pharmeasy</h1> */}
       <NavBar />
-      <span className="main-box">
+      <Box className="main-box">
         <Content />
         <Products />
-      </span>
+      </Box>
 
       
       {/* <SimpleSlider />  */}

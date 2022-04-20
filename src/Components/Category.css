@@ -1,0 +1,13 @@
+.content-box{
+    border: 2px solid black;
+     display: grid;
+            grid-template-columns: repeat(5, 18%);
+            grid-gap: 2%;
+            margin: 5%;
+    
+}
+
+.category_box{
+    border: 1px solid red;
+   display: flex;
+}

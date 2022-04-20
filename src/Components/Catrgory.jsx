@@ -1,23 +1,36 @@
 import React from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { showCategory } from "../Redux/CategoryData/action";
-// import { useDispatch } from "react-redux";
-// import { store } from "../Redux/store";
+import { getData, showCategory } from "../Redux/CategoryData/action";
+import "./Category.css"
 
 const Catrgorys = () => {
+  
   const dispatch = useDispatch()
-  const data = useSelector((state)=>state.showCategory)
-    useEffect (() => {
-    fetch("http://localhost:3001/category")
-      .then((data) => data.json())
-      .then((res) => {
-        dispatch(showCategory(res))
-        // console.log(res);
-      }, []);
-  });
-console.log(data)
-  return <div>Catrgorys</div>;
+
+
+  useEffect (() => {
+    dispatch(getData())
+
+  },[]);
+  const data = useSelector((state)=>state.categoryState.showCategory)
+  console.log(data)
+  return (
+    <div>
+      <div className="content-box">{
+          data.map((item, i) =>(
+            <div className="category_box" key={i}>
+              
+                <div>{item.id}</div>
+                <div>{item.cat_title}</div>
+
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  
+  );
 };
 
 export default Catrgorys;
