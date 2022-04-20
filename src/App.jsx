@@ -5,6 +5,7 @@ import NavBar from './Components/NavBar';
 import { Route, Routes } from 'react-router-dom';
 import Catrgorys from './Components/Catrgory';
 import Products from './Components/Product';
+import { ProductDetails } from './Components/ProductDetails';
 // import SimpleSlider from './Components/TopCrousal';
 
 
@@ -13,11 +14,11 @@ function App() {
     <div>
       <NavBar />
       <Box className="main-box">
-        <Content />
-        <Catrgorys /> 
-        
+        <Content />        
         <Routes>
-          <Route path={"/Products"} element={<Products />} />
+          <Route path={"/"} element={<Catrgorys />} />
+          <Route path={"/Products/:id"} element={<Products />} />
+          <Route path={"/ProductDetails/:id"} element={<ProductDetails />} />
         </Routes>
       </Box>      
     </div>

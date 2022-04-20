@@ -10,10 +10,15 @@
     
 }
 
+
 .product_box{
     border: 1px solid red;
     /* display: flex; */
     margin: 5px 0px 10px 5px;
+}
+.product_box:hover {
+    transform: scale(0.9);
+    box-shadow: 10px 5px 5px red;
 }
 
 .price{
