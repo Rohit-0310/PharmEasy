@@ -1,13 +1,17 @@
-.content-box{
+.category_main{
     border: 2px solid black;
-     display: grid;
-            grid-template-columns: repeat(5, 18%);
-            grid-gap: 2%;
-            margin: 5%;
+    width: 100%;
+    display: grid;
+        grid-template-columns: repeat(6, 13%);
+        grid-gap: 2%;
+        /* margin: 5%; */
+    margin: 20px 20px 20px 20px;
+    padding:10px 5px 10px 5px
     
 }
 
 .category_box{
     border: 1px solid red;
-   display: flex;
+    display: flex;
+   margin: 5px 0px 10px 5px;
 }
