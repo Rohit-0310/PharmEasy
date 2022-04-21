@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 // import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
+import {  Button } from '@mui/material'
 
 // import { getProductData } from "../Redux/Product/action";
 import "./Product.css"
@@ -26,6 +27,37 @@ const Products = () => {
   }, []);
 
 
+  const low = async () =>{
+    await fetch(
+      `http://localhost:3001/Products?categoryId=${prams.id}`
+    )
+    .then((d)=>d.json())
+    .then((res)=>{
+      let result = res.sort((a,b)=>{
+        return a.dis_price - b.dis_price
+      })
+      setDispro(result)
+    })
+    
+  }
+
+  const high = async () =>{
+    await fetch(
+      `http://localhost:3001/Products?categoryId=${prams.id}`
+    )
+    .then((d)=>d.json())
+    .then((res)=>{
+      let result = res.sort((a,b)=>{
+        return b.dis_price - a.dis_price
+      })
+      setDispro(result)
+    })
+    
+  }
+
+
+
+
   console.log(dispro);
   // useEffect (() => {
   //   dispatch(getProductData())
@@ -41,6 +73,11 @@ const Products = () => {
 
   return (
     <div>
+      <div>
+        <Button onClick={low}>Low To High</Button>
+        <Button onClick={high}>High To Low</Button>
+
+      </div>
       <div className="product_main">{
             dispro.map((item, i) =>(
               <div className="product_box" key={i} onClick={() =>One_product_details(item.id)} >
@@ -51,7 +88,7 @@ const Products = () => {
                     {/* <div>{item.id}</div> */}
                     <h3>{item.title}</h3>
                     <div className="price">
-                        <h5 className="MRP">MRP {item.price}</h5>
+                        <h5 className="MRP">MRP <del>{item.price}</del></h5>
                         <h6 className="ProductCard_discount">{item.discount}</h6>
                     </div>
                     <h4>₹ {item.dis_price}</h4>

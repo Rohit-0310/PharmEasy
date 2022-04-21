@@ -1,0 +1,71 @@
+.i_product_main{
+    border: 2px solid rgb(201, 30, 30);
+    /* width: 100%; */
+    /* display: flex; */
+    margin: 20px 20px 20px 20px;
+    padding:10px 5px 10px 5px
+    
+}
+
+
+.i_product_box{
+    border: 1px solid rgb(46, 114, 85);
+    display: flex;
+    margin: 5px 0px 10px 5px;
+}
+
+/* .i_product_box:hover {
+    transform: scale(0.9);
+    box-shadow: 10px 5px 5px rgb(68, 26, 26);
+} */
+.i_product_img{
+    width: 30%
+}
+.i_product_img:hover {
+    transform: scale(0.9);
+    /* box-shadow: 10px 5px 5px rgb(68, 26, 26); */
+} 
+
+
+
+.i_product_title{
+    width :67%
+}
+
+.i_price{
+    display: grid;
+    grid-template-columns: 12% 15% 12% 30%;
+    gap: 4%;
+}
+
+.i_MRP{
+    color: #8897a2;
+    font-size:14px;
+}
+
+
+.i_add_to_cart{
+    width: 150px;
+    height: 50px;
+    font-size:24px;
+    background-color: teal;
+    color: #fff;
+    border: none;
+    border-radius: 7px
+}
+.i_ProductCard_discount{
+    color: #000000;
+    background-image: url(https://assets.pharmeasy.in/web-assets/_next/static/media/pdp-discount.3be9b0b7b6df33237af63e00f8e4de02.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 10px;
+    padding: 5px 20px 5px 5px;
+    text-align: left;
+    min-width: 65px;
+    height: 20px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 600;
+}

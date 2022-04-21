@@ -1,7 +1,8 @@
+import { Button } from "@mui/material";
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-
+import "./ProductDetails.css"
 
 
 const ProductDetails = () => {
@@ -24,23 +25,21 @@ const ProductDetails = () => {
   
     return (
       <div>
-        <div className="product_main">{
-              
-
-
-                <div className="product_box" >
-                  <div>
+        <div className="i_product_main">{
+                <div className="i_product_box">
+                  <div className="i_product_img">
                       <img  src={disonepro.img} alt={disonepro.title} />
                   </div>
-    
-                      {/* <div>{disonepro.id}</div> */}
+                  <div className="i_product_title">
                       <h3>{disonepro.title}</h3>
-                      <div className="price">
-                          <h5 className="MRP">MRP {disonepro.price}</h5>
-                          <h6 className="ProductCard_discount">{disonepro.discount}</h6>
+                      <p>visit {disonepro.brand} Store</p>
+                      <div className="i_price">
+                            <h4>₹ {disonepro.dis_price}</h4>
+                            <h5 className="i_MRP">MRP <del>{disonepro.price}</del></h5>
+                            <h6 className="i_ProductCard_discount">{disonepro.discount}</h6>
+                            <button className="i_add_to_cart">Add To Cart</button>
                       </div>
-                      <h4>₹ {disonepro.dis_price}</h4>
-    
+                  </div>
                 </div>
              
           }
@@ -48,6 +47,10 @@ const ProductDetails = () => {
       </div>
     
     );
+
+    
+
+
   };
 
 
