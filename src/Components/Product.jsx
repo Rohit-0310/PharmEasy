@@ -35,7 +35,7 @@ const Products = () => {
   // const data = useSelector((state)=>state.productState.showProduct)
   // console.log(data)
   const One_product_details = (onedId) => {
-    navigate_to_one(`/ProductDetails/${onedId}`)
+    navigate_to_one(`/Products/ProductDetails/${onedId}`)
   }
   
 
