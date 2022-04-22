@@ -6,6 +6,8 @@ import { Route, Routes } from 'react-router-dom';
 import Catrgorys from './Components/Catrgory';
 import Products from './Components/Product';
 import ProductDetails from './Components/ProductDetails';
+import { Cart } from './Components/Cart';
+import DemoCarousel from './Components/TopCrousal';
 // import SimpleSlider from './Components/TopCrousal';
 
 
@@ -13,12 +15,14 @@ function App() {
   return (
     <div>
       <NavBar />
+        <DemoCarousel />    
       <Box className="main-box">
-        <Content />        
+        <Content />    
         <Routes>
           <Route path={"/"} element={<Catrgorys />} />
           <Route path={"/Products/:id"} element={<Products />} />
           <Route path={"/Products/ProductDetails/:id"} element={<ProductDetails />} />
+          <Route path="{/cart}" elements={<Cart />}>cart</Route>
         </Routes>
       </Box>      
     </div>

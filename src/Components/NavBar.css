@@ -7,6 +7,14 @@
     /* min-height: 50vh; */
 }
 
+
+.top-main-nav{
+    display: grid;
+    grid-template-columns: 12% 88%;
+}
+
+
+
 .nav-1{
     width : 550px;
     margin: 0px 30px 2px 300px;

@@ -1,51 +1,30 @@
-import React, { useState } from "react";
-import ReactDOM from "react-dom";
-import Carousel from "react-elastic-carousel";
-import Item from "./Item";
-import "./styles.css";
+import React, { Component } from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
-const breakPoints = [
-  { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2, itemsToScroll: 2 },
-  { width: 768, itemsToShow: 3 },
-  { width: 1200, itemsToShow: 4 }
-];
+class DemoCarousel extends Component {
+    render() {
+        return (
+            <Carousel>
+                <div>
+                    <img src="https://cms-contents.pharmeasy.in/banner/3c6703d82c9-WEBPAGE_deal20.jpg?dim=1440x0&dpr=1&q=100" alt="img-1" />
+                </div>
+                <div>
+                    <img src="https://cms-contents.pharmeasy.in/banner/5e1d2deebb1-Dweb.jpg?dim=1440x0&dpr=1&q=100" alt="img-1" />
+                    
+                </div>
+                <div>
+                    <img src="https://cms-contents.pharmeasy.in/banner/85955054ec0-Surgicare_Dweb_1.jpg?dim=1440x0&dpr=1&q=100" alt="img-1" /> 
+                </div>
+                <div>
+                    <img src="https://cms-contents.pharmeasy.in/banner/1da067cc5fa-WP.jpg?dim=1440x0&dpr=1&q=100" alt="img-1" /> 
+                </div>
+            </Carousel>
+        );
+    }
+};
 
-function App() {
-  const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
-
-  const addItem = () => {
-    const nextItem = Math.max(1, items.length + 1);
-    setItems([...items, nextItem]);
-  };
-
-  const removeItem = () => {
-    const endRange = Math.max(0, items.length - 1);
-    setItems(items.slice(0, endRange));
-  };
-
-  return (
-    <div className="App">
-      <div className="controls-wrapper">
-        <button onClick={removeItem}>Remove Item</button>
-        <button onClick={addItem}>Add Item</button>
-      </div>
-      <hr className="seperator" />
-      <div className="carousel-wrapper">
-        <Carousel breakPoints={breakPoints}>
-          {items.map((item) => (
-            <Item key={item}>{item}</Item>
-          ))}
-        </Carousel>
-      </div>
-    </div>
-  );
-}
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+// ReactDOM.render(<DemoCarousel />, document.querySelector('.demo-carousel'));
 
 
-
-
-
+export default DemoCarousel
