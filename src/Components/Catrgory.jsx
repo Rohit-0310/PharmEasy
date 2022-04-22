@@ -4,6 +4,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { getData } from "../Redux/CategoryData/action";
 import "./Category.css"
+import Content from "./Content";
+import NavBar from "./NavBar";
+import DemoCarousel from "./TopCrousal";
 
 const Catrgorys = () => {
   
@@ -26,6 +29,9 @@ const Catrgorys = () => {
 
   return (
     <div>
+      <NavBar />
+      <DemoCarousel />
+      <Content /> 
       <div className="category_main">{
           data.map((item, i) =>(
             <div className="category_box" key={i} onClick={() =>Show_All_product_details(item.id)}>

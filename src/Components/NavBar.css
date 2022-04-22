@@ -6,6 +6,29 @@
     margin: 0 auto;
     /* min-height: 50vh; */
 }
+.nav-search{
+    display: flex;
+    align-items: center;
+    text-Align: center;
+    max-width: 1024px;
+    background-color: #fff;
+    /* height: 30px; */
+    /* padding-right: -50px; */
+    margin: 20px auto;
+    border: solid #fff 2px;
+    border-radius: 9px;
+    flex-grow: 2;
+    /* border: none */
+    
+}
+
+.nav-search div{
+    height: 50px
+}
+
+
+
+
 
 
 .top-main-nav{
@@ -32,10 +55,21 @@
 }
 .nav-2{
     display: flex;
-    width : 250px;
+    width : 370px;
     margin: 0px 30px 0px 20px;
     align-items: center;
     margin-left: auto;
     justify-content: space-between;
     
+}
+
+.nav-2 button h4{
+    margin-right:7px;
+    border: 1px solid white;
+    width: 18px; 
+    height: 18px;
+    padding:2px;
+    border-radius:12px;
+    background-color: #fff;
+    color:teal
 }

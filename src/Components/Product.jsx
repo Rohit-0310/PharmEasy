@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 // import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
+import NavBar from "./NavBar";
 import {  Button } from '@mui/material'
 
 // import { getProductData } from "../Redux/Product/action";
@@ -73,6 +74,7 @@ const Products = () => {
 
   return (
     <div>
+      <NavBar />
       <div>
         <Button onClick={low}>Low To High</Button>
         <Button onClick={high}>High To Low</Button>
@@ -89,7 +91,7 @@ const Products = () => {
                     <h3>{item.title}</h3>
                     <div className="price">
                         <h5 className="MRP">MRP <del>{item.price}</del></h5>
-                        <h6 className="ProductCard_discount">{item.discount}</h6>
+                        <h6 className="ProductCard_discount">{item.discount}OFF</h6>
                     </div>
                     <h4>₹ {item.dis_price}</h4>
   

@@ -14,17 +14,12 @@ import DemoCarousel from './Components/TopCrousal';
 function App() {
   return (
     <div>
-      <NavBar />
-        <DemoCarousel />    
-      <Box className="main-box">
-        <Content />    
         <Routes>
           <Route path={"/"} element={<Catrgorys />} />
           <Route path={"/Products/:id"} element={<Products />} />
           <Route path={"/Products/ProductDetails/:id"} element={<ProductDetails />} />
           <Route path="{/cart}" elements={<Cart />}>cart</Route>
         </Routes>
-      </Box>      
     </div>
   );
 }
