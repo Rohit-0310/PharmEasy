@@ -3,7 +3,7 @@ import { useEffect } from "react";
 // import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import NavBar from "./NavBar";
-import {  Button } from '@mui/material'
+import {  Button, FormControl, InputLabel, MenuItem, Select } from '@mui/material'
 
 // import { getProductData } from "../Redux/Product/action";
 import "./Product.css"
@@ -13,6 +13,7 @@ const Products = () => {
   const prams = useParams()
 
   const navigate_to_one = useNavigate()
+  const navigate = useNavigate()
   // const dispatch = useDispatch()
   useEffect(() => {
     const itemData = async () => {
@@ -57,6 +58,22 @@ const Products = () => {
   }
 
 
+  const none = async () =>{
+    await fetch(
+      `http://localhost:3001/Products?categoryId=${prams.id}`
+    )
+    .then((d)=>d.json())
+    .then((res)=>{
+      let result = res.sort((a,b)=>{
+        return a.id - b.id
+      })
+      setDispro(result)
+    })
+    
+  }
+
+
+
 
 
   console.log(dispro);
@@ -72,29 +89,53 @@ const Products = () => {
   }
   
 
+  const handleHome = () =>{
+    navigate(`/`)
+}
+
   return (
     <div>
       <NavBar />
-      <div>
-        <Button onClick={low}>Low To High</Button>
-        <Button onClick={high}>High To Low</Button>
+          <p className="nav_to_Home">
+              <Button onClick={()=>handleHome()}>Home</Button>  
+          </p>
+      <p className="sort">
 
-      </div>
+      <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+      <InputLabel id="demo-select-small">Sort By</InputLabel>
+            <Select label="Sort By"
+              labelId="demo-select-small"
+              id="demo-select-small">
+              <MenuItem value="None" onClick={none}>None
+                {/* <em>None</em> */}
+              </MenuItem>
+              <MenuItem value="Low To High" onClick={low}>Low To High</MenuItem>
+              <MenuItem value="High To Low" onClick={high}>High To Low</MenuItem>
+            </Select>
+      </FormControl>
+
+
+{/* 
+        <Button onClick={low}>Low To High</Button>
+        <Button onClick={high}>High To Low</Button> */}
+      </p>
       <div className="product_main">{
             dispro.map((item, i) =>(
-              <div className="product_box" key={i} onClick={() =>One_product_details(item.id)} >
-                <div>
-                    <img  src={item.img} alt={item.title} />
-                </div>
-  
-                    {/* <div>{item.id}</div> */}
-                    <h3>{item.title}</h3>
-                    <div className="price">
-                        <h5 className="MRP">MRP <del>{item.price}</del></h5>
-                        <h6 className="ProductCard_discount">{item.discount}OFF</h6>
+              <div>
+                  <div className="product_box" key={i} onClick={() =>One_product_details(item.id)} >
+                    <div>
+                        <img  src={item.img} alt={item.title} />
                     </div>
-                    <h4>₹ {item.dis_price}</h4>
-  
+
+                        {/* <div>{item.id}</div> */}
+                        <h3>{item.title}</h3>
+                        <div className="price">
+                            <h5 className="MRP">MRP <del>{item.price}</del></h5>
+                            <h6 className="ProductCard_discount">{item.discount}OFF</h6>
+                        </div>
+                        <h4>₹ {item.dis_price}</h4>
+
+                  </div>
               </div>
             ))
         }

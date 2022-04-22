@@ -1,9 +1,14 @@
 .content-main{
     display:  flex;
+    /* max-width: 1024px;
+    margin: 0 auto;
+    min-height: 50vh; */
+    /*margin: 20px 20px 20px 20px;*/
+}
+.content-top{
     max-width: 1024px;
     margin: 0 auto;
-    min-height: 50vh;
-    /* margin: 20px 20px 20px 20px; */
+    min-height: 50vh
 }
 
 .content-box{

@@ -14,6 +14,20 @@
 }
 
 
+.sort {
+    max-width: 1024px;
+    margin: 0 auto;
+    /* align-items: center; */
+    text-align: right;
+}
+
+.nav_to_Home{
+    font-size:13px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+
 .product_box{
     border: 1px solid #f1f3f4;
     border-radius: 5px;

@@ -1,10 +1,10 @@
 .i_product_main{
-    border: 2px solid rgb(201, 30, 30);
+    /* border: 2px solid rgb(201, 30, 30); */
     /* width: 100%; */
     /* display: flex; */
     /* margin: 20px 20px 20px 20px; */
     padding:10px 5px 10px 5px;
-    max-width: 1024px;
+    max-width: 1424px;
     margin: 0 auto;
     min-height: 50vh
     
@@ -13,8 +13,11 @@
 
 .i_product_box{
     border: 1px solid rgb(46, 114, 85);
-    display: flex;
-    margin: 5px 0px 10px 5px;
+    /* display: flex; */
+    display : grid;
+    grid-template-columns: 20% 50% 15%;
+    gap: 2%;
+    margin: 50px 0px 10px 5px;
 }
 
 /* .i_product_box:hover {
@@ -22,8 +25,8 @@
     box-shadow: 10px 5px 5px rgb(68, 26, 26);
 } */
 .i_product_img{
-    /* width: 30%;
-    height: 200px; */
+     /* width: 20%; */
+   /* height: 200px; */
     display: block;
     margin-top: 20px;
     margin-left: auto;
@@ -46,18 +49,41 @@
 
 
 .i_product_title{
-    width :67%
+    /* width :25% */
+}
+
+
+.i_product_rating{
+    display: flex;
+}
+
+.i_product_rating p{
+    margin: 0px 0px -30px 5px;
+    color: #8897a2
+    /* margin-bottom: -30px; */
+    /* margin-top: 0px; */
 }
 
 .i_price{
-    display: grid;
-    grid-template-columns: 12% 15% 12% 30%;
-    gap: 4%;
+    /* display: grid;
+    grid-template-columns: 12% 15% 12%;
+    gap: -3%; */
+    display: flex;
+}
+.i_price h4{
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .i_MRP{
     color: #8897a2;
     font-size:14px;
+    font-weight: 400;
+}
+
+.i_cart_price{
+    display: grid;
+    grid-template-columns: 60% 22%;
 }
 
 
@@ -71,20 +97,21 @@
     border-radius: 7px
 }
 .i_ProductCard_discount{
-    color: #000000;
+    color: #fff;
     background-image: url(https://assets.pharmeasy.in/web-assets/_next/static/media/pdp-discount.3be9b0b7b6df33237af63e00f8e4de02.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    font-size: 10px;
-    padding: 5px 20px 5px 5px;
+    font-size: 11px;
+    padding: 3px 17px 3px 7px;
     text-align: left;
     min-width: 65px;
-    height: 20px;
+    height: 18px;
     line-height: 1;
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
     font-weight: 600;
+    margin-top:19px
 }
 
 
@@ -93,12 +120,14 @@
     color: #9e9e9e;
 }
 .i_product_time p{
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: 600;
     margin-bottom: -20px;
 }
 
 .i_product_time  p span{
-    font-size: 20px;
+    /* font-size: 16px; */
+
     color: #000
 }
 

@@ -4,12 +4,22 @@ import "./NavBar.css";
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 import MoodIcon from '@mui/icons-material/Mood';
+import { useNavigate } from 'react-router-dom';
 
 export default function NavBar() {
+
+  const navigate = useNavigate()
+  
+  const handlCart = () =>{
+    navigate("/Cart")
+  }
+  const handlMain = (id)=>{
+    navigate(`/`)
+  }
   return (
     <Box className="top-main-nav" textAlign="center" style={{height: '130px', border:"2px solid black", backgroundColor:"teal"}}>
-      <div style={{padding: "15% 2% 2% 50%"}}>
-        <img width="200px" src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="logo" />
+      <div style={{padding: "15% 2% 2% 50%"}} >
+        <img onClick={()=>handlMain()} width="200px" src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="logo" />
       </div>
       <div>
           <div className="nav-search">
@@ -41,7 +51,8 @@ export default function NavBar() {
                     <Button>
                       <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" alt="%" />
                        Login/Signup</Button>
-                    <Button>
+                    <Button onClick={()=>handlCart()}>
+                      
                     <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg" alt='q' />
                        Cart</Button>
                 </div>

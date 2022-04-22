@@ -1,8 +1,17 @@
 import React from 'react'
 import "./Cart.css";
+import NavBar from './NavBar';
 
-export const Cart = () => {
+const Cart = () => {
+
+  console.log("Cart")
   return (
-    <div className="cart-main">This is My Cart Page</div>
+    <div>
+      <NavBar />
+      <div className="cart-main">This is My Cart Page</div>
+    </div>
   )
 }
+
+
+export default Cart;
