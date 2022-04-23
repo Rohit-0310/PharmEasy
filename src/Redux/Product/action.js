@@ -10,7 +10,7 @@
 
 
 // export const getProductData = () => (dispatch) => {
-//     fetch(`http://localhost:3001/Products?categoryId=${prams.id}`)
+//     fetch(`https://mydbpharma.herokuapp.com/Products?categoryId=${prams.id}`)
 //     .then((data) => data.json())
 //     .then((res) => dispatch(showProduct(res)));
 // }

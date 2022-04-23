@@ -18,7 +18,7 @@ const Products = () => {
   useEffect(() => {
     const itemData = async () => {
       let result = await fetch(
-        `http://localhost:3001/Products?categoryId=${prams.id}`
+        `https://mydbpharma.herokuapp.com/Products?categoryId=${prams.id}`
       );
       let res = await result.json();
       // console.log(res);
@@ -31,7 +31,7 @@ const Products = () => {
 
   const low = async () =>{
     await fetch(
-      `http://localhost:3001/Products?categoryId=${prams.id}`
+      `https://mydbpharma.herokuapp.com/Products?categoryId=${prams.id}`
     )
     .then((d)=>d.json())
     .then((res)=>{
@@ -45,7 +45,7 @@ const Products = () => {
 
   const high = async () =>{
     await fetch(
-      `http://localhost:3001/Products?categoryId=${prams.id}`
+      `https://mydbpharma.herokuapp.com/Products?categoryId=${prams.id}`
     )
     .then((d)=>d.json())
     .then((res)=>{
@@ -60,7 +60,7 @@ const Products = () => {
 
   const none = async () =>{
     await fetch(
-      `http://localhost:3001/Products?categoryId=${prams.id}`
+      `https://mydbpharma.herokuapp.com/Products?categoryId=${prams.id}`
     )
     .then((d)=>d.json())
     .then((res)=>{

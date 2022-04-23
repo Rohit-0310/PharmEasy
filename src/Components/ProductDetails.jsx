@@ -18,7 +18,7 @@ const ProductDetails = () => {
     useEffect(() => {
       const itemData = async () => {
         let result = await fetch(
-          `http://localhost:3001/Products/${onepro.id}`
+          `https://mydbpharma.herokuapp.com/Products/${onepro.id}`
         );
         let res = await result.json();
         setDisonepro(res)
@@ -93,9 +93,18 @@ const ProductDetails = () => {
                           <Button color="secondary" variant="outlined">2Kg</Button>
                       </Stack> */}
                   </div>
-                  <div>.
-                      <h3>Please add item(s) to proceed</h3>
-                      <Button color="primary">View Cart</Button>
+                  <div className="i_Cart_box">
+                      <p>Please add item(s) to proceed</p>
+                      <button className="i_view_cart">View Cart</button>
+                      <div className="i_view_cart_offer">
+                        <h4>Offers</h4>
+                        <h4>View All</h4>
+                      </div>
+                      <h5>Get flat Rs.250 cashback on ICICI Debit & Credit cards</h5>
+                      <h5>Get up to Rs.500 cashback via Amazon Pay</h5>
+                      <h5>Get 4000 Paytm Cashback Points via Paytm wallet | Postpaid</h5>
+                      <h5>Get up to Rs.1000 cashback via PhonePe wallet only.</h5>
+                      <h5>Get FLAT ₹80 cashback via Airtel Payments Bank.</h5>
                   </div>
                 </div>
             </div>

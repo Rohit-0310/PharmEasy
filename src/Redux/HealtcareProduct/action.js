@@ -14,14 +14,14 @@ export const sortHealthCareProduct = (data) => ({
 
 
 export const getHCRData = () => (dispatch) => {
-    fetch("http://localhost:3001/Products")
+    fetch("https://mydbpharma.herokuapp.com/Products")
     .then((data) => data.json())
     .then((res) => dispatch(healthCareProduct(res)));
 }
 
 
 export const sortLow = () => (dispatch) => {
-    fetch("http://localhost:3001/Products")
+    fetch("https://mydbpharma.herokuapp.com/Products")
       .then((data) => data.json())
       .then((res) =>
         dispatch(

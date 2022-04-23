@@ -32,7 +32,7 @@ const HealthCare = () => {
 
   const high = async () =>{
     await fetch(
-      `http://localhost:3001/Products`
+      `https://mydbpharma.herokuapp.com/Products`
     )
     .then((d)=>d.json())
     .then((res)=>{
@@ -47,7 +47,7 @@ const HealthCare = () => {
 
   const none = async () =>{
     await fetch(
-      `http://localhost:3001/Products`
+      `https://mydbpharma.herokuapp.com/Products`
     )
     .then((d)=>d.json())
     .then((res)=>{

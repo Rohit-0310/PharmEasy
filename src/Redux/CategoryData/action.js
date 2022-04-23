@@ -10,7 +10,7 @@ export const showCategory = (data) => ({
 
 
 export const getData = () => (dispatch) => {
-    fetch("http://localhost:3001/category")
+    fetch("https://mydbpharma.herokuapp.com/category")
     .then((data) => data.json())
     .then((res) => dispatch(showCategory(res)));
 }
