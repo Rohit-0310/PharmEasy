@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 const Cart = () => {
 
   const dispatchcart = useDispatch()
-  // const navigate = useNavigate()
+  const navigate = useNavigate()
 
   useEffect (() => {
     dispatchcart(getCartData())
@@ -21,6 +21,10 @@ const Cart = () => {
   //   navigate(`/Products/${id}`)
   // }
 
+
+  const handlePaymentPage = (id)=>{
+      navigate(`/PaymentPage`)
+    }
   // const data = useSelector((state)=>state.cartState.showCart)
   const data = useSelector((state)=>state.cartState.showCart)
 /*
@@ -103,6 +107,9 @@ const Cart = () => {
             <div className="checkout-box">
                 <h5>Apply Coupon</h5>
                 <button className="cart-delevery">Add Delevery Addredd</button>
+                <button className="cart-delevery"
+                onClick={()=>handlePaymentPage()}
+                >Proceed To Buy</button>
                 <div className="free-delevery">Free delevery with cart value above 500</div>
             </div>
           </div>

@@ -104,19 +104,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 .checkout-box{
     /* border: 1px solid rgb(109, 11, 11) */
 }
+
+
+
 .cart-delevery{
     background: #10847e;
     color: #fff;
@@ -137,6 +130,14 @@
     opacity: .9;
     background: #0a5753;
 }
+
+
+
+.cart-delevery{
+    margin-bottom: 20px;
+}
+
+
 
 .free-delevery{
 

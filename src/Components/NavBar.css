@@ -54,6 +54,12 @@
     color: #fff;
 
 }
+
+.nav-2 > span > Button {
+    color: #fff;
+}
+
+
 .nav-2{
     display: flex;
     width : 370px;

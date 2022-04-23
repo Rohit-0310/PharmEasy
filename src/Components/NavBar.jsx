@@ -21,6 +21,15 @@ export default function NavBar() {
   const handlCart = () =>{
     navigate("/Cart")
   }
+
+  const handlLogin = () =>{
+    navigate("/Login")
+  }
+
+  const handlSignup = () =>{
+    navigate("/Signup")
+  }
+  
   const handlMain = (id)=>{
     navigate(`/`)
   }
@@ -56,9 +65,11 @@ export default function NavBar() {
                     <Button>
                     <img src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg" alt="%" />
                       Offers</Button>
-                    <Button>
+                    <span>
                       <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" alt="%" />
-                       Login/Signup</Button>
+                      <Button onClick={()=>handlLogin()}>Login</Button>
+                      <Button onClick={()=>handlSignup()}>Signup</Button>
+                       </span>
                     <Button onClick={()=>handlCart()}>
                       <div className="nav-cart-update">
                         {mycart.length}
