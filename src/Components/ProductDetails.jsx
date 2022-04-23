@@ -42,6 +42,11 @@ const ProductDetails = () => {
     const handleProduct = (id)=>{
       navigate(`/Products/${id}`)
     }
+
+
+    const handlCart = () =>{
+      navigate("/Cart")
+    }
   
     const handleHome = () =>{
         navigate(`/`)
@@ -101,7 +106,7 @@ const ProductDetails = () => {
             <div>
                 <p style={{fontSize:"13px"}} >
                     <Button 
-                    // onClick={()=>handleHome()}
+                    onClick={()=>handleHome()}
                     >Home</Button>  
                     - 
                     <Button
@@ -154,11 +159,11 @@ const ProductDetails = () => {
                       </Stack> */}
                   </div>
                   <div className="i_Cart_box">
-                      <p>Please add item(s) to proceed</p>
-                      <p> Items: {mycart.length} </p>
+                      {/* <p>Please add item(s) to proceed</p> */}
+                      <p>{mycart.length}  items in Cart</p>
                       <div>Total Price <h3>  {"₹" + price}</h3></div>
 
-                      <button className="i_view_cart">View Cart</button>
+                      <button className="i_view_cart"   onClick={()=>handlCart()}  >View Cart</button>
                       <div className="i_view_cart_offer">
                         <h4>Offers</h4>
                         <h4>View All</h4>

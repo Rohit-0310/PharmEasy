@@ -4,6 +4,7 @@
     text-Align: center;
     max-width: 1524px;
     margin: 0 auto;
+    /* margin-left: -10px; */
     /* min-height: 50vh; */
 }
 .nav-search{
@@ -72,4 +73,17 @@
     border-radius:12px;
     background-color: #fff;
     color:teal
+}
+
+.nav-cart-update{
+    padding: 2px 4px;
+    font-size: 12px;
+    border-radius: 7px;
+    background-color: #f76b6d;
+    position: absolute;
+    right: -10px;
+    line-height: 1;
+    top: -10px;
+    right: auto;
+    left: 7px;
 }

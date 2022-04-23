@@ -7,6 +7,9 @@ class DemoCarousel extends Component {
         return (
             <Carousel>
                 <div>
+                    <img src="https://cms-contents.pharmeasy.in/banner/6d06c3a5178-GETCSH.jpg?dim=1440x0&dpr=1.25&q=100" alt="img-1" />
+                </div>
+                <div>
                     <img src="https://cms-contents.pharmeasy.in/banner/3c6703d82c9-WEBPAGE_deal20.jpg?dim=1440x0&dpr=1&q=100" alt="img-1" />
                 </div>
                 <div>

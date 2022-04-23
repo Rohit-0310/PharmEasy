@@ -59,7 +59,10 @@ export default function NavBar() {
                     <Button>
                       <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" alt="%" />
                        Login/Signup</Button>
-                    <Button onClick={()=>handlCart()}>{mycart.length}                      
+                    <Button onClick={()=>handlCart()}>
+                      <div className="nav-cart-update">
+                        {mycart.length}
+                      </div>
                     <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg" alt='q' />
                        Cart</Button>
                 </div>
