@@ -2,13 +2,19 @@ import { Box, Button, Input } from '@mui/material'
 import React from 'react'
 import "./NavBar.css";
 import SearchIcon from '@mui/icons-material/Search';
-import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
-import MoodIcon from '@mui/icons-material/Mood';
+// import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
+// import MoodIcon from '@mui/icons-material/Mood';
 import { useNavigate } from 'react-router-dom';
 
 export default function NavBar() {
 
   const navigate = useNavigate()
+
+  const navigateHCR = useNavigate()
+
+  const hendleHealtcareProduct =() => {
+    navigateHCR(`/HealtcareProduct`)
+  }
   
   const handlCart = () =>{
     navigate("/Cart")
@@ -40,7 +46,7 @@ export default function NavBar() {
           <div className="main-nav">
                 <div className="nav-1">
                     <Button>Order medicines</Button>
-                    <Button >Healthcare Products</Button>
+                    <Button onClick={()=>hendleHealtcareProduct()}>Healthcare Products</Button>
                     <Button >Lab Tests</Button>
                     <Button >RTPCR</Button>
                 </div>

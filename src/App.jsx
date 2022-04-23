@@ -7,6 +7,7 @@ import Catrgorys from './Components/Catrgory';
 import Cart from './Components/Cart'
 import Products from './Components/Product';
 import ProductDetails from './Components/ProductDetails';
+import Healtcare from './Components/HealthCare'
 
 import DemoCarousel from './Components/TopCrousal';
 // import SimpleSlider from './Components/TopCrousal';
@@ -20,6 +21,7 @@ function App() {
           <Route path={"/Products/:id"} element={<Products />} />
           <Route path={"/Products/ProductDetails/:id"} element={<ProductDetails />} />
           <Route path="/Cart" element={<Cart />} />
+          <Route path={"/HealtcareProduct"} element={<Healtcare />} />
         </Routes>
     </div>
   );

@@ -4,6 +4,7 @@ import { loginReducer } from "../Login/reducer";
 import { productReducer } from "../Product/reducer";
 import { signUpReducer } from "../Signup/reducer";
 import { categoryReducer } from "../CategoryData/reducer";
+import { healthCareReducer } from "../HealtcareProduct/reducer";
 import thunk from "redux-thunk";
 
 
@@ -12,7 +13,8 @@ const mainReducer = combineReducers({
     signupState : signUpReducer,
     cartState : cartReducer,
     productState : productReducer,
-    categoryState : categoryReducer
+    categoryState : categoryReducer,
+    HealthCareState : healthCareReducer
 })
 
 

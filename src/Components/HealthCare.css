@@ -1,0 +1,112 @@
+/* .HRC_main{
+    max-width: 1024px;
+    margin: 0 auto;
+    min-height: 50vh;
+    border: 2px solid black;
+    width: 100%;
+    display: grid;
+        grid-template-columns: repeat(6, 13%);
+        grid-gap: 2%;
+    padding:10px 5px 10px 5px
+    
+}
+
+.HRC_box{
+    border: 1px solid red;
+    display: flex;
+   margin: 5px 0px 10px 5px;
+} */
+
+/* new----------Style */
+.HRC_main{
+    max-width: 1024px;
+    margin: 0 auto;
+    min-height: 50vh;
+    border: 2px solid black;
+    width: 100%;
+    display: grid;
+        grid-template-columns: repeat(3, 32%);
+        grid-gap: 2%;
+        /* margin: 5%; */
+    /* margin: 20px 20px 20px 20px; */
+    padding:10px 5px 10px 5px
+    
+}
+
+
+.sort {
+    max-width: 1024px;
+    margin: 0 auto;
+    /* align-items: center; */
+    text-align: right;
+}
+
+.nav_to_Home{
+    font-size:13px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+
+.HRC_box{
+    border: 1px solid #f1f3f4;
+    border-radius: 5px;
+    height: 100%;
+    /* display: flex; */
+    margin: 5px 0px 10px 5px;
+}
+.HRC_box:hover {
+    /* transform: scale(0.9);
+    box-shadow: 10px 5px 5px red; */
+    border: 1px solid #10847e;
+}
+
+
+.HRC_box div img{
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+  /* width: 50%; */
+}
+
+.HRC_box h3{
+    margin:0px 20px -20px 20px;
+}
+
+.HRC_box h4{
+    margin:0px 20px 0px 20px;
+}
+
+.price{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    margin:5px 20px -30px 20px;
+
+}
+
+
+.MRP{
+    color: #8897a2;
+    font-size:15px;
+    
+}
+
+.HRC_Card_discount{
+    color: #fff;
+    /* margin: 0px 0px 0px 0px; */
+    background-image: url(https://assets.pharmeasy.in/web-assets/_next/static/media/pdp-discount.3be9b0b7b6df33237af63e00f8e4de02.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 12px;
+    padding: 5px 20px 5px 5px;
+    text-align: left;
+    min-width: 65px;
+    height: 20px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 600;
+}
