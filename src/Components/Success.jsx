@@ -5,7 +5,7 @@ import "./Success.css"
 const Success = () => {
   return (
     <div>
-        <NavBar />
+        {/* <NavBar /> */}
         <div>
             <div className="success-top">
             <div class="card">
