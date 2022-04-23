@@ -1,5 +1,5 @@
 import { Button, Stack } from "@mui/material";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./ProductDetails.css";
@@ -7,11 +7,21 @@ import { useNavigate } from "react-router-dom";
 import NavBar from "./NavBar";
 import FlashOnIcon from '@mui/icons-material/FlashOn';
 import Rating from '@mui/material/Rating';
+import { CartContext } from "./Context/CartContext";
 
 
 
 
 const ProductDetails = () => {
+
+
+    const [price, setPrice] = useState(0);
+
+    const { mycart, setmyCart } = useContext(CartContext);
+
+
+
+
   const navigate = useNavigate()
     const [disonepro, setDisonepro] = useState([])
     const onepro = useParams()
@@ -38,7 +48,51 @@ const ProductDetails = () => {
     }
     let star = disonepro.star;
     const rating = disonepro.rating;
-    console.log(star);
+    // console.log(star);
+
+
+
+    const handleAddCart = (itemid) => {
+        // let res = disonepro.find((item) => {
+        //   return item.id === itemid;
+        // });
+
+        // console.log(disonepro)
+        // console.log(itemid)
+    
+        fetch(`https://mydbpharma.herokuapp.com/cart`, {
+          method: "POST",
+          body: JSON.stringify(itemid),
+          headers: {
+            "content-type": "application/json",
+          },
+        }).then(() => {
+          getMore();
+        });
+        // console.log(itemid);
+      };
+    
+
+      async function getMore() {
+        let cdata = await fetch("https://mydbpharma.herokuapp.com/cart");
+        let res = await cdata.json();
+        console.log(res);
+    
+        let totalprice = 0;
+        res.map((e) => (totalprice = e.dis_price + totalprice));
+        setPrice(totalprice);
+    
+        setmyCart(res);
+      }
+    
+    
+
+
+
+
+
+
+
   
     return (
       <div>
@@ -46,9 +100,13 @@ const ProductDetails = () => {
         <div className="i_product_main">{
             <div>
                 <p style={{fontSize:"13px"}} >
-                    <Button onClick={()=>handleHome()}>Home</Button>  
+                    <Button 
+                    // onClick={()=>handleHome()}
+                    >Home</Button>  
                     - 
-                    <Button onClick={()=>handleProduct(disonepro.categoryId)}>{disonepro.brand} -</Button>
+                    <Button
+                     onClick={()=>handleProduct(disonepro.categoryId)}
+                     >{disonepro.brand} -</Button>
                     {disonepro.title}
                     </p>
                 <div className="i_product_box">
@@ -57,7 +115,9 @@ const ProductDetails = () => {
                   </div>
                   <div className="i_product_title">
                       <h3>{disonepro.title}</h3>
-                      <p style={{color:"#10847e"}} >visit <span onClick={()=>handleProduct(disonepro.categoryId)} > {disonepro.brand}</span> Store</p>
+                      <p style={{color:"#10847e"}} >visit <span 
+                      onClick={()=>handleProduct(disonepro.categoryId)} 
+                      > {disonepro.brand}</span> Store</p>
 
                     <div className="i_product_rating">
                         
@@ -75,7 +135,7 @@ const ProductDetails = () => {
                                   <h4 className="i_ProductCard_discount">{disonepro.discount} OFF</h4>
                             </div>
                             <div>
-                                <button className="i_add_to_cart">Add To Cart</button>
+                                <button className="i_add_to_cart" onClick={() => handleAddCart(disonepro)}>Add To Cart</button>
                             </div>
                       </div>
                       <div className="i_product_time">
@@ -95,6 +155,9 @@ const ProductDetails = () => {
                   </div>
                   <div className="i_Cart_box">
                       <p>Please add item(s) to proceed</p>
+                      <p> Items: {mycart.length} </p>
+                      <div>Total Price <h3>  {"₹" + price}</h3></div>
+
                       <button className="i_view_cart">View Cart</button>
                       <div className="i_view_cart_offer">
                         <h4>Offers</h4>

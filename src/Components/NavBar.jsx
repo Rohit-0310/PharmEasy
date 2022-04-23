@@ -1,14 +1,16 @@
 import { Box, Button, Input } from '@mui/material'
-import React from 'react'
+import React, { useContext } from 'react'
 import "./NavBar.css";
 import SearchIcon from '@mui/icons-material/Search';
 // import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 // import MoodIcon from '@mui/icons-material/Mood';
 import { useNavigate } from 'react-router-dom';
+import { CartContext } from './Context/CartContext';
 
 export default function NavBar() {
 
   const navigate = useNavigate()
+  const { mycart, setmyCart } = useContext(CartContext);
 
   const navigateHCR = useNavigate()
 
@@ -57,8 +59,7 @@ export default function NavBar() {
                     <Button>
                       <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" alt="%" />
                        Login/Signup</Button>
-                    <Button onClick={()=>handlCart()}>
-                      
+                    <Button onClick={()=>handlCart()}>{mycart.length}                      
                     <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg" alt='q' />
                        Cart</Button>
                 </div>
