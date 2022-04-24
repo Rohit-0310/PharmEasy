@@ -27,6 +27,15 @@ const PaymentPage = () => {
         // setmyCart(res);
       }
 
+      const Handleclick = (event) => {
+          console.log(event.target.value);
+        //   if(event.target.value.length < 5){
+        //     navigate("/PaymentPage")
+        //   } else{
+        //     navigate("/Success");
+        //   }
+      }
+      
 
 
 
@@ -53,7 +62,7 @@ const PaymentPage = () => {
                             </div>
                             <hr />
                             <p>Cardholder Name</p>
-                            <input type="text" class="inputbox" name="name" required />
+                            <input onChange={Handleclick} type="text" class="inputbox" name="name" required />
                             <p>Card Number</p>
                                     <input type="number" class="inputbox" name="card_number" id="card_number" required />
 

@@ -1,12 +1,13 @@
 import React, { useContext } from 'react'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCart, getCartData } from '../Redux/Cart/action';
+import { addToCart, getCartData, removeCartData } from '../Redux/Cart/action';
 import FlashOnIcon from '@mui/icons-material/FlashOn';
 import "./Cart.css";
 import NavBar from './NavBar';
 import { useNavigate } from 'react-router-dom';
 import { PriceContext } from './Context/PriceContext';
+import { Button } from '@mui/material';
 
 const Cart = () => {
 
@@ -64,16 +65,15 @@ const Cart = () => {
 
   
 
-  const handleDelete = async (item) => {
-    fetch(`https://mydbpharma.herokuapp.com/cart`, {
+  const handleDelete = async (id) => {
+    let resp = await fetch(`https://mydbpharma.herokuapp.com/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
       },
-    }).then(() => {
-      getCartData();
     });
-    console.log(item)
+    getCartData();
+    dispatchcart(removeCartData(id));
   };
 
   console.log(data)
@@ -100,8 +100,9 @@ const Cart = () => {
                             <div>
                                 <h5>{item.title}</h5>
                             </div>
+                            <Button onclick={() => handleDelete(item.id)}>Delete</Button>
                             <div className="cart-delete" 
-                            onclick={() => handleDelete(item)}
+                            
                             >
                                 <img src="https://assets.pharmeasy.in/web-assets/dist/2fb50086.svg" alt="delete" />
                             </div>
