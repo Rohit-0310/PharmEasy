@@ -148,11 +148,11 @@ const Cart = () => {
                     <h3>  {"₹" + price}</h3>
                 </div>
                 <div>
-                    {/* Deleviry Address Start */}
+
+                  
                     <div>
                             <div className="delevery-form">
                                 <div className="delevery-title">Add Your Address</div>
-                                {/* <div class="subtitle">Let's create your account!</div> */}
                             <div class="del-input-container">
                                 <input
                                 name="Name"
@@ -192,14 +192,8 @@ const Cart = () => {
                                 type="text" className="del_submit">Proceed To Buy</button>
                         </div>
                     </div>
-                    {/* <button className="cart-delevery">Add Delevery Addredd</button> */}
 
-
-                    {/* Delevery Address End */}
                 </div>
-                {/* <button className="cart-delevery"
-                onClick={()=>handlePaymentPage()}
-                >Proceed To Buy</button> */}
                 <div className="free-delevery">Free delevery with cart value above 500</div>
             </div>
           </div>

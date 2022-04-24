@@ -1,24 +1,11 @@
 .pay_top{
     padding:10px 5px 10px 5px;
-    max-width: 1024px;
+    max-width: 1424px;
     margin: 0 auto;
     min-height: 50vh;
     font-family: 'Roboto', sans-serif!important;
   	box-sizing: border-box;
 }
-/* .top_pay_background{
-  background-image: url("https://wallpaperaccess.com/full/3063067.png");
-} */
-.payment_total{
-    display: flex;
-    justify-content: space-between;
-}
-
-
-
-
-
-
 
 
 
@@ -27,27 +14,135 @@
 	width: 100%;
 	display: flex;
     flex-direction: column;
-    /* background-color: #DFDBE5; */
-    /* background-image: url("https://wallpaperaccess.com/full/3063067.png"); */
-    color:#963E7B;
+    color:#2f1828;
 }
 
 .card {
-	width: 60rem;
-    margin: auto;
+	width: 65rem;
+    /* margin: auto; */
     background: white;
     position:center;
     align-self: center;
     top: 50rem;
     border-radius: 1.5rem;
     box-shadow: 4px 3px 20px #3535358c;
-    /* display:flex; */
     flex-direction: row;
     
 }
+.payment_top{
+    display: grid;
+    grid-template-columns: 67% 30%;
+    gap: 3%;
+}
+.payment_offer{
+    /* border: 1px solid red; */
+}
+/* Left_Style */
+
+
+.payment_offer_h1{
+    margin-top:-2px;
+}
+
+.payment_paytm{
+    margin:5px;
+    display: grid;
+    grid-template-columns: 10% 85% 2%;
+    /* border: 1px solid #089c4d */
+}
+.payment_wall{
+    margin-bottom: -2px;
+    margin-top: -2px;
+    
+
+}
+
+.paymeny_check_box{
+    margin-top:-13px;
+}
+.payment_wall_p{
+    font-size: 14px;
+    /* margin-top: -0px; */
+}
+
+.paym_head{
+    padding-left: 10px;
+}
+
+
+.payment_wall_IMG{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 15%;
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Right-Style */
+.payment_breakdown{
+    /* border: 1px solid aqua; */
+}
+.payment_wallet{
+    padding:10px;
+    /* border: 1px solid red; */
+    background-color: #F2FFF8;
+    border-radius:5px;
+    display: grid;
+    grid-template-columns: 25% 60% 5%;
+}
+
+.payment_wallet_tc > h5{
+    margin-top:-3px
+}
+
+.payment_wallet_tc > p{
+    margin-top:-19px;
+    margin-bottom:-10px
+}
+
+.payment_total{
+    margin-top: -10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment_total > p {
+    margin-bottom: -1px
+}
+
+.payment_border_line{
+    margin-top:12px;
+    border-bottom: 1px dotted #2f1828
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .leftside {
-	/* background: #030303; */
 	width: 25rem;
 	display: inline-flex;
     align-items: center;
@@ -57,15 +152,12 @@
 }
 
 .product {
-    /* object-fit: cover; */
 	width: 20em;
     height: 20em;
-    /* border-radius: 100%; */
 }
 
 .rightside {
     background-color: #ffffff;
-	/* width: 35rem; */
 	border-bottom-right-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
     padding: 1rem 2rem 3rem 3rem;
@@ -110,7 +202,7 @@ p{
 .button{
     background: linear-gradient(
 135deg
-, #753370 0%, #298096 100%);
+, #00E676 0%, #AEEA00 100%);
     padding: 15px;
     border: none;
     border-radius: 50px;
@@ -121,11 +213,12 @@ p{
     width:100%;
     letter-spacing: .11rem;
     outline:none;
+    cursor: pointer;
 }
 
 .button:hover
 {
-	transform: scale(1.05) translateY(-3px);
+	transform: scale(1.0) translateY(-3px);
     box-shadow: 3px 3px 6px #38373785;
 }
 
@@ -150,4 +243,4 @@ p{
         padding:0.5rem 3rem 3rem 2rem;
       border-radius:0;
     }
-}
+} 
