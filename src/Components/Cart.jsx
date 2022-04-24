@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, getCartData } from '../Redux/Cart/action';
@@ -6,16 +6,41 @@ import FlashOnIcon from '@mui/icons-material/FlashOn';
 import "./Cart.css";
 import NavBar from './NavBar';
 import { useNavigate } from 'react-router-dom';
+import { PriceContext } from './Context/PriceContext';
+import { CartContext } from './Context/CartContext';
 
 const Cart = () => {
 
   const dispatchcart = useDispatch()
   const navigate = useNavigate()
 
+  const {price, setPrice} = useContext(PriceContext);
+
+  const { mycart, setmyCart } = useContext(CartContext);
+
+
+
   useEffect (() => {
     dispatchcart(getCartData())
+    getMore()
 
   },[]);
+
+
+  
+  async function getMore() {
+    let cdata = await fetch("https://mydbpharma.herokuapp.com/cart");
+    let res = await cdata.json();
+    console.log(res);
+
+    let totalprice = 0;
+    res.map((e) => (totalprice = e.dis_price + totalprice));
+    setPrice(Math.round(totalprice));
+
+    // setmyCart(res);
+  }
+
+  
 
   // const handleProduct = (id)=>{
   //   navigate(`/Products/${id}`)
@@ -39,6 +64,8 @@ const Cart = () => {
         });
     
   }*/
+
+  
 
   const handleDelete = async (item) => {
     fetch(`https://mydbpharma.herokuapp.com/cart`, {
@@ -106,6 +133,22 @@ const Cart = () => {
 
             <div className="checkout-box">
                 <h5>Apply Coupon</h5>
+                <h4>Order Summary</h4>
+                <div className="Cart-Total-amount"> 
+                    <p>Cart Value</p>
+                    <p>  {"₹" + price}</p>
+                </div>
+
+                <div className="Cart-Total-amount"> 
+                    <p>Delivery Charge</p>
+                    <p><del style={{marginRight:"5px"}}>₹25.00</del> <span>Free</span></p>
+                </div>
+
+
+                <div className="Cart-Total-amount"> 
+                    <h3>Amount to be paid</h3>
+                    <h3>  {"₹" + price}</h3>
+                </div>
                 <button className="cart-delevery">Add Delevery Addredd</button>
                 <button className="cart-delevery"
                 onClick={()=>handlePaymentPage()}

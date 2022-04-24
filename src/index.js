@@ -7,17 +7,20 @@ import { Provider } from 'react-redux';
 import {store } from "./Redux/store/store"
 import { BrowserRouter } from 'react-router-dom';
 import { CartContextProvider } from './Components/Context/CartContext';
+import { PriceContextProvider } from './Components/Context/PriceContext';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <BrowserRouter>
-        <CartContextProvider>
-            <Provider store={store}>
-                <App />
-            </Provider>
-        </CartContextProvider>
+          <PriceContextProvider>
+             <CartContextProvider>
+                <Provider store={store}>
+                    <App />
+                </Provider>
+                </CartContextProvider>
+          </PriceContextProvider>
         </BrowserRouter>
     </React.StrictMode>
 );

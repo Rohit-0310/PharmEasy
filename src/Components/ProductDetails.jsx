@@ -8,6 +8,7 @@ import NavBar from "./NavBar";
 import FlashOnIcon from '@mui/icons-material/FlashOn';
 import Rating from '@mui/material/Rating';
 import { CartContext } from "./Context/CartContext";
+import { PriceContext } from "./Context/PriceContext";
 
 
 
@@ -15,7 +16,9 @@ import { CartContext } from "./Context/CartContext";
 const ProductDetails = () => {
 
 
-    const [price, setPrice] = useState(0);
+    // const [price, setPrice] = useState(0);
+
+    const {price, setPrice} = useContext(PriceContext);
 
     const { mycart, setmyCart } = useContext(CartContext);
 
@@ -25,6 +28,7 @@ const ProductDetails = () => {
   const navigate = useNavigate()
     const [disonepro, setDisonepro] = useState([])
     const onepro = useParams()
+    
     useEffect(() => {
       const itemData = async () => {
         let result = await fetch(
