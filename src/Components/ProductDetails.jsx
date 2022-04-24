@@ -77,6 +77,9 @@ const ProductDetails = () => {
           },
         }).then(() => {
           getMore();
+          setTimeout(() =>{
+            alert("Added To Cart Successfully")
+          }, 2000)
         });
         // console.log(itemid);
       };
@@ -89,7 +92,7 @@ const ProductDetails = () => {
     
         let totalprice = 0;
         res.map((e) => (totalprice = e.dis_price + totalprice));
-        setPrice(totalprice);
+        setPrice(Math.round(totalprice).toFixed(2));
     
         setmyCart(res);
       }
@@ -165,7 +168,11 @@ const ProductDetails = () => {
                   <div className="i_Cart_box">
                       {/* <p>Please add item(s) to proceed</p> */}
                       <p>{mycart.length}  items in Cart</p>
-                      <div>Total Price <h3>  {"₹" + price}</h3></div>
+                      <div>
+                        <div style={{display: 'flex', justifyContent: 'space-between', marginRight:"10px"}}>
+                          <p>Total Price</p>
+                          <h3>  {"₹" + price}</h3></div>
+                        </div>
 
                       <button className="i_view_cart"   onClick={()=>handlCart()}  >View Cart</button>
                       <div className="i_view_cart_offer">

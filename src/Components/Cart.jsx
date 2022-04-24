@@ -100,9 +100,9 @@ const Cart = () => {
                             <div>
                                 <h5>{item.title}</h5>
                             </div>
-                            <Button onclick={() => handleDelete(item.id)}>Delete</Button>
+                            {/* <Button onclick={() => handleDelete(item.id)}>Delete</Button> */}
                             <div className="cart-delete" 
-                            
+                            onclick={() => handleDelete(item.id)}
                             >
                                 <img src="https://assets.pharmeasy.in/web-assets/dist/2fb50086.svg" alt="delete" />
                             </div>
