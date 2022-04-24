@@ -7,7 +7,6 @@ import "./Cart.css";
 import NavBar from './NavBar';
 import { useNavigate } from 'react-router-dom';
 import { PriceContext } from './Context/PriceContext';
-import { CartContext } from './Context/CartContext';
 
 const Cart = () => {
 
@@ -15,8 +14,6 @@ const Cart = () => {
   const navigate = useNavigate()
 
   const {price, setPrice} = useContext(PriceContext);
-
-  const { mycart, setmyCart } = useContext(CartContext);
 
 
 

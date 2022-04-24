@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { PriceContext } from './Context/PriceContext'
 import NavBar from './NavBar'
 import "./PaymentPage.css"
 
@@ -8,9 +9,31 @@ import "./PaymentPage.css"
 const PaymentPage = () => {
 
     const navigate = useNavigate();
+    const {price, setPrice} = useContext(PriceContext);
+
+    useEffect (() => {
+        getMore()
+    },[])
+
+    async function getMore() {
+        let cdata = await fetch("https://mydbpharma.herokuapp.com/cart");
+        let res = await cdata.json();
+        console.log(res);
+    
+        let totalprice = 0;
+        res.map((e) => (totalprice = e.dis_price + totalprice));
+        setPrice(Math.round(totalprice).toFixed(2));
+    
+        // setmyCart(res);
+      }
+
+
+
 
     const handleSuccess = (id)=>{
-        navigate(`/Success`)
+        setTimeout(() => {
+            navigate("/Success");
+          }, 3000);
       }
   return (
     <div>
@@ -19,19 +42,16 @@ const PaymentPage = () => {
             <div className="pay_top">
             
             <div class="mainscreen">
-                    {/* <img src="https://image.freepik.com/free-vector/purple-background-with-neon-frame_52683-34124.jpg"  class="bgimg " alt="" /> */}
                       <div class="card">
-                        {/* <div class="leftside">
-                          <img
-                            src="https://cdn01.pharmeasy.in/dam/products_otc/I04933/horlicks-womens-plus-chocolate-jar-400-g-2-1643882496.jpg"
-                            class="product"
-                            alt="Imag"
-                          />
-                        </div> */}
                         <div class="rightside">
                           <form action="">
-                            <h1>CheckOut</h1>
-                            <h2>Payment Information</h2>
+                            {/* <h1>CheckOut</h1> */}
+                            <h2>Payment Information :-</h2>
+                            <div class="payment_total">
+                                <h3>Amount to be paid :-</h3>
+                                <h3>  {"₹" + price}</h3>
+                            </div>
+                            <hr />
                             <p>Cardholder Name</p>
                             <input type="text" class="inputbox" name="name" required />
                             <p>Card Number</p>

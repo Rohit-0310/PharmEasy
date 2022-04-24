@@ -6,9 +6,22 @@
     font-family: 'Roboto', sans-serif!important;
   	box-sizing: border-box;
 }
-.top_pay_background{
+/* .top_pay_background{
   background-image: url("https://wallpaperaccess.com/full/3063067.png");
+} */
+.payment_total{
+    display: flex;
+    justify-content: space-between;
 }
+
+
+
+
+
+
+
+
+
 .mainscreen{
 	min-height: 100vh;
 	width: 100%;
@@ -28,7 +41,7 @@
     top: 50rem;
     border-radius: 1.5rem;
     box-shadow: 4px 3px 20px #3535358c;
-    display:flex;
+    /* display:flex; */
     flex-direction: row;
     
 }
@@ -52,7 +65,7 @@
 
 .rightside {
     background-color: #ffffff;
-	width: 35rem;
+	/* width: 35rem; */
 	border-bottom-right-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
     padding: 1rem 2rem 3rem 3rem;
