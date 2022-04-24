@@ -130,8 +130,8 @@ const Cart = () => {
             </div>
 
             <div className="checkout-box">
-                <h5>Apply Coupon</h5>
-                <h4>Order Summary</h4>
+                <h5 className="order_summ_all">Apply Coupon</h5>
+                <h4 className="order_summ_order">Order Summary</h4>
                 <div className="Cart-Total-amount"> 
                     <p>Cart Value</p>
                     <p>  {"₹" + price}</p>
@@ -147,10 +147,59 @@ const Cart = () => {
                     <h3>Amount to be paid</h3>
                     <h3>  {"₹" + price}</h3>
                 </div>
-                <button className="cart-delevery">Add Delevery Addredd</button>
-                <button className="cart-delevery"
+                <div>
+                    {/* Deleviry Address Start */}
+                    <div>
+                            <div className="delevery-form">
+                                <div className="delevery-title">Add Your Address</div>
+                                {/* <div class="subtitle">Let's create your account!</div> */}
+                            <div class="del-input-container">
+                                <input
+                                name="Name"
+                                // onChange={Handlechange}
+                                id="email" className="del_input" type="text" placeholder=" " />
+                                <div class="del-cut del-cut-short"></div>
+                                <label for="email" class="placeholder">Bill To</label>
+                            </div>
+                            <div class="del-input-container">
+                                <input 
+                                name="Mobile No"
+                                // onChange={Handlechange}
+                                id="password" className="del_input" type="number" placeholder=" " />
+                                <div class="del-cut"></div>
+                                <label for="Mobile" class="placeholder">Mobile No.</label>
+                            </div>
+
+                            <div class="del-input-container">
+                                <input 
+                                name="Address"
+                                // onChange={Handlechange}
+                                id="password" className="del_input" type="text" placeholder=" " />
+                                <div class="del-cut"></div>
+                                <label for="Address" class="placeholder">Building Address</label>
+                            </div>
+
+                            <div class="del-input-container">
+                                <input 
+                                name="Pincode"
+                                // onChange={Handlechange}
+                                id="password" className="del_input" type="number" placeholder=" " />
+                                <div class="del-cut"></div>
+                                <label for="Pincode" class="placeholder">Pincode</label>
+                            </div>
+                                <button 
+                                onClick={()=>handlePaymentPage()}
+                                type="text" className="del_submit">Proceed To Buy</button>
+                        </div>
+                    </div>
+                    {/* <button className="cart-delevery">Add Delevery Addredd</button> */}
+
+
+                    {/* Delevery Address End */}
+                </div>
+                {/* <button className="cart-delevery"
                 onClick={()=>handlePaymentPage()}
-                >Proceed To Buy</button>
+                >Proceed To Buy</button> */}
                 <div className="free-delevery">Free delevery with cart value above 500</div>
             </div>
           </div>

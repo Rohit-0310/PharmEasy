@@ -41,7 +41,7 @@ const Login = () => {
     <div>
         <NavBar />
         <div className="top-login">
-        <div class="form">
+            <div class="form">
                 <div class="title">Welcome</div>
                 <div class="subtitle">Let's create your account!</div>
                 <div class="input-container ic2">

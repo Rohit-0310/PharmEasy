@@ -31,7 +31,9 @@ const Catrgorys = () => {
     <div>
       <NavBar />
       <DemoCarousel />
-      <Content /> 
+      <div className="content-Box">
+        <Content /> 
+      </div>
       <div className="category_main">{
           data.map((item, i) =>(
             <div className="category_box" key={i} onClick={() =>Show_All_product_details(item.id)}>
