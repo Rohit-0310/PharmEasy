@@ -7,6 +7,9 @@ class DemoCarousel extends Component {
         return (
             <Carousel>
                 <div>
+                    <img src="https://cms-contents.pharmeasy.in/banner/a793b04cdfc-grand25_patna_express.jpg?dim=1440x0&dpr=1&q=100" alt="img-1" />
+                </div>
+                <div>
                     <img src="https://cms-contents.pharmeasy.in/banner/6d06c3a5178-GETCSH.jpg?dim=1440x0&dpr=1.25&q=100" alt="img-1" />
                 </div>
                 <div>
@@ -21,6 +24,9 @@ class DemoCarousel extends Component {
                 </div>
                 <div>
                     <img src="https://cms-contents.pharmeasy.in/banner/1da067cc5fa-WP.jpg?dim=1440x0&dpr=1&q=100" alt="img-1" /> 
+                </div>
+                <div>
+                    <img src="https://cms-contents.pharmeasy.in/banner/7400d70904b-DWEB.jpg?dim=1440x0&dpr=1&q=100" alt="img-1" /> 
                 </div>
             </Carousel>
         );
