@@ -34,7 +34,7 @@ export default function NavBar() {
     navigate(`/`)
   }
   return (
-    <Box className="top-main-nav" textAlign="center" style={{height: '130px', border:"2px solid black", backgroundColor:"teal"}}>
+    <Box className="top-main-nav" textAlign="center" style={{height: '130px', backgroundColor:"teal"}}>
       <div style={{padding: "15% 2% 2% 50%"}} >
         <img onClick={()=>handlMain()} width="200px" src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="logo" />
       </div>

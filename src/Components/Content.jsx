@@ -1,21 +1,29 @@
 import { Box } from '@mui/system'
 import React from 'react'
 import "./Content.css";
+import orderMedicine from "../IMG/OrderMedicine.png";
+import LabTest from "../IMG/LabTest.png";
+import Healthcare from "../IMG/HealthcareProduct.png";
+import  EasyPlus from "../IMG/PharmEasyPlus1.png";
+
 
 export default function Content() {
   return (
     <div className="content-top" >
         <Box className ="content-main">      
             <Box className="content-box">
-              <img width = "150px" src="https://assets.pharmeasy.in/web-assets/dist/7c645a8d.png?dim=186x0&dpr=1.25&q=100" alt="image1" />
+              <img width = "100%" src={orderMedicine} alt="image1" />
             </Box>
             <Box className="content-box">
-              <img width = "150px" src="https://assets.pharmeasy.in/web-assets/dist/7c645a8d.png?dim=186x0&dpr=1.25&q=100" alt="image2" />
+              <img width = "100%" src={Healthcare} alt="image3"/>
             </Box>
             <Box className="content-box">
-              <img width = "150px" src="https://assets.pharmeasy.in/web-assets/dist/7c645a8d.png?dim=186x0&dpr=1.25&q=100" alt="image3"/>
+              <img width = "100%" src={LabTest} alt="image2" />
             </Box>
         </Box>
+        <div>
+        <img width = "100%" src={EasyPlus} alt="image1" />
+        </div>
     </div>
   )
 }
