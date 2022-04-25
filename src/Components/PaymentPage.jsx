@@ -289,8 +289,9 @@ const PaymentPage = () => {
                             </div>
                           </div>
 
-
-                          <button type="submit" className="button" onClick={()=>handleSuccess()} >CheckOut</button>
+                    <div className="order_place_btn">
+                          <button type="submit" className="button" onClick={()=>handleSuccess()} >Place Order</button>
+                    </div>
 
 
 
@@ -331,6 +332,9 @@ const PaymentPage = () => {
                                 <div class="payment_total">
                                     <h4>Amount to be paid :-</h4>
                                     <h4>  {"₹" + price}</h4>
+                                </div>
+                                <div className="order_place_btn">
+                                        <button style={{width:"100%"}} type="submit" className="button" onClick={()=>handleSuccess()} >Place Order</button>
                                 </div>
                             </div>
 

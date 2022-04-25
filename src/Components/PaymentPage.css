@@ -27,6 +27,7 @@
     border-radius: 1.5rem;
     box-shadow: 4px 3px 20px #3535358c;
     flex-direction: row;
+    padding: 25px;
     
 }
 .payment_top{
@@ -198,7 +199,9 @@ p{
 .expcvv_text2{
     padding:0 1rem;
 }
-
+.order_place_btn{
+    text-align: center;
+}
 .button{
     background: linear-gradient(
 135deg
@@ -210,7 +213,7 @@ p{
     font-weight: 400;
     font-size: 1.2rem;
     margin-top: 10px;
-    width:100%;
+    width:65%;
     letter-spacing: .11rem;
     outline:none;
     cursor: pointer;

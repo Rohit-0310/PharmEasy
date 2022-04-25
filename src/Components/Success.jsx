@@ -11,7 +11,9 @@ const Success = () => {
 
 
     const handleHome = () =>{
-        navigate(`/`)
+        setTimeout(() => {
+            navigate(`/`)            
+          }, 2000);
     }
   return (
     <div>
