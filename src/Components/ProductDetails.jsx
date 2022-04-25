@@ -77,9 +77,9 @@ const ProductDetails = () => {
           },
         }).then(() => {
           getMore();
-          setTimeout(() =>{
-            alert("Added To Cart Successfully")
-          }, 2000)
+          // setTimeout(() =>{
+          //   alert("Added To Cart Successfully")
+          // }, 1000)
         });
         // console.log(itemid);
       };
