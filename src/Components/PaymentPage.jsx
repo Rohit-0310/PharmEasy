@@ -321,7 +321,7 @@ const PaymentPage = () => {
                             <div>
                                 <h4 style={{marginBottom:"-5px"}}>Price Breakdown</h4>
                                 <div class="payment_total">
-                                    <p>Amount to be paid :-</p>
+                                    <p>Cart Value</p>
                                     <p>  {"₹" + price}</p>
                                 </div>
                                 <div class="payment_total">
@@ -330,7 +330,7 @@ const PaymentPage = () => {
                                 </div>
                                 <div class="payment_border_line"></div>
                                 <div class="payment_total">
-                                    <h4>Amount to be paid :-</h4>
+                                    <h4>Amount to be paid </h4>
                                     <h4>  {"₹" + price}</h4>
                                 </div>
                                 <div className="order_place_btn">
