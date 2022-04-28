@@ -3,8 +3,20 @@
     max-width: 1024px;
     margin: 0 auto;
     min-height: 50vh;
+    
     /* border: 1px solid red; */
 }
+
+.cart-main{
+  margin-top:155px;
+}
+
+@media screen and (max-width: 750px) {
+  .cart-main {
+      margin-top:105px;
+  }
+}
+
 
 .cart_checkout{
     display : grid;

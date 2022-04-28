@@ -46,7 +46,9 @@ const Cart = () => {
 
 
   const handlePaymentPage = (id)=>{
+    setTimeout(() => {
       navigate(`/PaymentPage`)
+    }, 2000);
     }
   // const data = useSelector((state)=>state.cartState.showCart)
   const data = useSelector((state)=>state.cartState.showCart)

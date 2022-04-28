@@ -32,6 +32,12 @@ const Signup = () => {
     }, 3000);
   };
 
+  const handlLogin = () =>{
+    setTimeout(() => {
+        navigate("/Login");
+      }, 1000);
+  }
+
 //   const gotoLog = () => {
 //     navigate("/login");
 //   };
@@ -40,34 +46,38 @@ const Signup = () => {
     <div>
         <NavBar />
         <div className="top-signup">
-        <div class="form">
-                <div class="title">Welcome</div>
-                <div class="subtitle">Please Login to Your Account</div>
-                <div class="input-container ic1">
+        <div className="singup_form">
+                 <div className='wel_Login_btn'>
+                    <div className="signup_title">Welcome</div>
+                    <div><button onClick={()=>handlLogin()} className="Login_btn">Login</button></div>
+                 </div>
+
+                <div className="signup_subtitle">Let's create your account!</div>
+                <div className="signup_input-container sn_ic1">
                     <input 
                     onChange={Handlechange} 
                     name="Name"
-                    id="firstname" class="input" type="text" placeholder=" " />
-                    <div class="cut"></div>
-                    <label for="firstname" class="placeholder">First name</label>
+                    id="firstname" className="signup_input" type="text" placeholder=" " />
+                    <div className="signup_cut"></div>
+                    <label for="firstname" className="signup_placeholder">First name</label>
                 </div>
-                <div class="input-container ic2">
+                <div className="signup_input-container sn_ic2">
                     <input 
                     onChange={Handlechange}
                     name="Email"
-                    id="email" class="input" type="text" placeholder=" " />
-                    <div class="cut cut-short"></div>
-                    <label for="email" class="placeholder">Email</label>
+                    id="email" className="signup_input" type="text" placeholder=" " />
+                    <div className="signup_cut signup_cut-short"></div>
+                    <label for="email" className="signup_placeholder">Email</label>
                 </div>
-                <div class="input-container ic2">
+                <div className="signup_input-container sn_ic2">
                     <input 
                     onChange={Handlechange}
                     name="Password"
-                    id="password" class="input" type="password" placeholder=" " />
-                    <div class="cut"></div>
-                    <label for="password" class="placeholder">Password</label>
+                    id="password" className="signup_input" type="password" placeholder=" " />
+                    <div className="signup_cut"></div>
+                    <label for="password" className="signup_placeholder">Password</label>
                 </div>
-                    <button onClick={Handleclick} type="text" class="submit">Sign Up</button>
+                    <button onClick={Handleclick} type="text" className="signup_submit">Sign Up</button>
             </div>
         </div>
     </div>

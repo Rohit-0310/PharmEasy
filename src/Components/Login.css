@@ -1,55 +1,77 @@
 .top-login{
     padding:10px 5px 10px 5px;
-    max-width: 1024px;
+    max-width: 720px;
     margin: 0 auto;
     min-height: 50vh;
+    font-family: 'Roboto', sans-serif !important;
+  	box-sizing: border-box;
 }
 
-.form {
-    background-color: #10847e;
+
+.top-login{
+  margin-top:155px;
+}
+
+@media screen and (max-width: 750px) {
+  .top-login {
+      margin-top:105px;
+  }
+}
+
+
+
+
+
+
+
+
+.login_form {
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 4px 3px 20px #3535358c;
     border-radius: 20px;
     box-sizing: border-box;
-    height: 500px;
+    /* height: 400px; */
     padding: 20px;
     /* width: 720px; */
   }
   
-  .title {
-    color: #eee;
+  .login_title {
+    color: #2f1828;
     font-family: sans-serif;
     font-size: 36px;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 20px;
   }
   
-  .subtitle {
-    color: #eee;
+  .login_subtitle {
+    color: #2f1828;
     font-family: sans-serif;
     font-size: 16px;
     font-weight: 600;
     margin-top: 10px;
   }
   
-  .input-container {
+  .login_input-container {
     height: 50px;
     position: relative;
     width: 100%;
   }
   
-  .ic1 {
+  .login_ic1 {
     margin-top: 40px;
   }
   
-  .ic2 {
+  .login_ic2 {
     margin-top: 30px;
   }
   
-  .input {
-    background-color: #303245;
+  .login_input {
+    background-color: #eee;
     border-radius: 12px;
     border: 0;
     box-sizing: border-box;
-    color: #eee;
+    color: #2f1828;
     font-size: 18px;
     height: 100%;
     outline: 0;
@@ -57,8 +79,8 @@
     width: 100%;
   }
   
-  .cut {
-    background-color: #10847e;
+  .login_cut {
+    background-color: #fff;
     border-radius: 10px;
     height: 20px;
     left: 20px;
@@ -67,20 +89,25 @@
     transform: translateY(0);
     transition: transform 200ms;
     width: 76px;
+    font-size:50px;
+    
   }
   
-  .cut-short {
-    width: 50px;
+  .login_cut-short {
+    width: 60px;
   }
   
-  .input:focus ~ .cut,
-  .input:not(:placeholder-shown) ~ .cut {
+  .login_input:focus ~ .login_cut,
+  .login_input:not(:placeholder-shown) ~ .login_cut {
     transform: translateY(8px);
+    box-shadow: 4px 3px 20px #3535358c;
   }
   
-  .placeholder {
+  .login_placeholder {
     color: #65657b;
     font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 500;
     left: 20px;
     line-height: 14px;
     pointer-events: none;
@@ -90,27 +117,27 @@
     top: 20px;
   }
   
-  .input:focus ~ .placeholder,
-  .input:not(:placeholder-shown) ~ .placeholder {
+  .login_input:focus ~ .login_placeholder,
+  .login_input:not(:placeholder-shown) ~ .login_placeholder {
     transform: translateY(-30px) translateX(10px) scale(0.75);
   }
   
-  .input:not(:placeholder-shown) ~ .placeholder {
+  .login_input:not(:placeholder-shown) ~ .login_placeholder {
     color: #808097;
   }
   
-  .input:focus ~ .placeholder {
+  .login_input:focus ~ .login_placeholder {
     color: #dc2f55;
   }
   
-  .submit {
-    background-color: #08d;
+  .login_submit {
+    background-color: teal;
     border-radius: 12px;
     border: 0;
     box-sizing: border-box;
     color: #eee;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 25px;
     height: 50px;
     margin-top: 38px;
     /* outline: 0; */
@@ -118,6 +145,11 @@
     width: 100%;
   }
   
-  .submit:active {
-    background-color: #06b;
+  .login_submit:active {
+    background-color: #0a5753;
   }
+
+  .login_submit:hover {
+    opacity: .9;
+    background: #26A69A;
+}

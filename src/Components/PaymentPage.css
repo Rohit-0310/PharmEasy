@@ -1,3 +1,12 @@
+.top_pay_background{
+    margin-top:155px;
+}
+
+@media screen and (max-width: 750px) {
+    .top_pay_background {
+        margin-top:105px;
+    }
+  }
 .pay_top{
     padding:10px 5px 10px 5px;
     max-width: 1424px;

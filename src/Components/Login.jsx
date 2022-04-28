@@ -41,28 +41,28 @@ const Login = () => {
     <div>
         <NavBar />
         <div className="top-login">
-            <div class="form">
-                <div class="title">Welcome</div>
-                <div class="subtitle">Let's create your account!</div>
-                <div class="input-container ic2">
+            <div className="login_form">
+                <div className="login_title">Welcome</div>
+                <div className="login_subtitle">Please Login to Your Account</div>
+                <div className="login_input-container login_ic2">
                     <input
                     name="Email"
                     onChange={Handlechange}
-                    id="email" class="input" type="text" placeholder=" " />
-                    <div class="cut cut-short"></div>
-                    <label for="email" class="placeholder">Email</label>
+                    id="email" className="login_input" type="text" placeholder=" " />
+                    <div className="login_cut login_cut-short"></div>
+                    <label for="email" className="login_placeholder">Email</label>
                 </div>
-                <div class="input-container ic2">
+                <div className="login_input-container login_ic2">
                     <input 
                     name="Password"
                     onChange={Handlechange}
-                    id="password" class="input" type="password" placeholder=" " />
-                    <div class="cut"></div>
-                    <label for="password" class="placeholder">Password</label>
+                    id="password" className="login_input" type="password" placeholder=" " />
+                    <div className="login_cut"></div>
+                    <label for="password" className="login_placeholder">Password</label>
                 </div>
                     <button 
                     onClick={checkLogin}
-                    type="text" class="submit">Login</button>
+                    type="text" className="login_submit">Login</button>
             </div>
         </div>
     </div>

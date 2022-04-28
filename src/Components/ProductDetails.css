@@ -9,7 +9,15 @@
     min-height: 50vh
     
 }
-
+.i_product_main{
+    margin-top:155px;
+  }
+  
+  @media screen and (max-width: 750px) {
+    .i_product_main {
+        margin-top:105px;
+    }
+  }
 
 .i_product_box{
     /* border: 1px solid rgb(46, 114, 85); */

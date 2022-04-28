@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-
+import "./TopCrousal.css"
 class DemoCarousel extends Component {
     render() {
         return (
+            <div className="demo_top_main">
             <Carousel>
                 <div>
                     <img src="https://cms-contents.pharmeasy.in/banner/a793b04cdfc-grand25_patna_express.jpg?dim=1440x0&dpr=1&q=100" alt="img-1" />
@@ -29,6 +30,7 @@ class DemoCarousel extends Component {
                     <img src="https://cms-contents.pharmeasy.in/banner/7400d70904b-DWEB.jpg?dim=1440x0&dpr=1&q=100" alt="img-1" /> 
                 </div>
             </Carousel>
+            </div>
         );
     }
 };

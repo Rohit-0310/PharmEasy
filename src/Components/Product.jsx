@@ -96,6 +96,7 @@ const Products = () => {
   return (
     <div>
       <NavBar />
+      <div className="top_product">
           <p className="nav_to_Home">
               <Button onClick={()=>handleHome()}>Home</Button>  
           </p>
@@ -139,6 +140,7 @@ const Products = () => {
               </div>
             ))
         }
+      </div>
       </div>
     </div>
   

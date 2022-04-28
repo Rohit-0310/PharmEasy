@@ -1,13 +1,10 @@
-import { Box, Button, Input } from '@mui/material'
 import React, { useContext } from 'react'
-import "./NavBar.css";
-import SearchIcon from '@mui/icons-material/Search';
-// import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
-// import MoodIcon from '@mui/icons-material/Mood';
 import { useNavigate } from 'react-router-dom';
 import { CartContext } from './Context/CartContext';
+import "./NavPay.css"
 
-export default function NavBar() {
+
+const NavPay = () => {
 
   const navigate = useNavigate()
   const { mycart, setmyCart } = useContext(CartContext);
@@ -117,3 +114,6 @@ export default function NavBar() {
     </div>
   )
 }
+
+export default NavPay
+

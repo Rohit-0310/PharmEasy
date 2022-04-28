@@ -21,8 +21,8 @@
 .HRC_main{
     max-width: 1024px;
     margin: 0 auto;
-    min-height: 50vh;
-    border: 2px solid black;
+    /* min-height: 150vh; */
+    /* border: 2px solid black; */
     width: 100%;
     display: grid;
         grid-template-columns: repeat(3, 32%);
@@ -33,6 +33,15 @@
     
 }
 
+.health_main_nav{
+    margin-top:155px;
+  }
+  
+  @media screen and (max-width: 750px) {
+    .health_main_nav {
+        margin-top:105px;
+    }
+  }
 
 .sort {
     max-width: 1024px;
@@ -53,8 +62,12 @@
     border-radius: 5px;
     height: 100%;
     /* display: flex; */
-    margin: 5px 0px 10px 5px;
+    margin: -50px 0px -10px 5px;
+    margin-bottom: -10px;
 }
+/* .HRC_Card_h4{
+    margin-bottom: -520px;
+} */
 .HRC_box:hover {
     /* transform: scale(0.9);
     box-shadow: 10px 5px 5px red; */

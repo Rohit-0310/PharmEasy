@@ -2,7 +2,8 @@ import { Checkbox } from '@mui/material'
 import React, { useContext, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { PriceContext } from './Context/PriceContext'
-import NavBar from './NavBar'
+// import NavBar from './NavBar'
+import NavPay from './NavPay'
 import "./PaymentPage.css"
 
 
@@ -48,7 +49,7 @@ const PaymentPage = () => {
       }
   return (
     <div>
-        <NavBar />
+        <NavPay />
         <div className="top_pay_background">
             <div className="pay_top">
             

@@ -74,6 +74,7 @@ const HealthCare = () => {
   return (
     <div>
       <NavBar />
+      <div className="health_main_nav">
         <p className="nav_to_Home">
                 <Button onClick={()=>handleHome()}>Home</Button>  
         </p>
@@ -97,25 +98,24 @@ const HealthCare = () => {
       <div className="HRC_main">{
           data.map((items, i) =>(
             <div>
-                  <div className="HRC_box" key={i} 
-                  onClick={() =>One_product_details(items.id)} 
-                  >
+                  <div className="HRC_box" key={i} onClick={() =>One_product_details(items.id)} >
                     <div>
                         <img  src={items.img} alt={items.title} />
                     </div>
 
-                        <div>{items.id}</div>
+                        {/* <div>{items.id}</div> */}
                         <h3>{items.title}</h3>
                         <div className="price">
                             <h5 className="MRP">MRP <del>{items.price}</del></h5>
                             <h6 className="HRC_Card_discount">{items.discount}OFF</h6>
                         </div>
-                        <h4>₹ {items.dis_price}</h4>
+                        <h4 className="HRC_Card_h4">₹ {items.dis_price}</h4>
 
                   </div>
               </div>
           ))
         }
+      </div>
       </div>
     </div>
   

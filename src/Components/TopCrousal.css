@@ -1,0 +1,11 @@
+.demo_top_main{
+    margin-top:143px;
+    width:100%;
+  }
+  
+  @media screen and (max-width: 750px) {
+    .demo_top_main {
+        margin-top:100px;
+        width:100%;
+    }
+  }
