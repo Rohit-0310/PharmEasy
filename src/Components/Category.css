@@ -5,7 +5,8 @@
     /* border: 2px solid black; */
     width: 100%;
     display: grid;
-        grid-template-columns: repeat(6, 15.5%);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        /* grid-template-columns: repeat(6, 15.5%); */
         grid-gap: 2%;
         /* margin: 5%; */
     /* margin: 20px 20px 20px 20px; */
